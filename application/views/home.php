@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width= device-width, initial-scale=1.0">
     <title>OPEN RECRUITMENT BEM KM FASILKOM</title>
 
     <link href="<?= base_url('assets/bootstrap/css/bootstrap.css') ?>" rel="stylesheet">
