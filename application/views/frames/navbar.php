@@ -40,7 +40,7 @@
           <li><a href="<?= base_url('index.php/regist') ?>"><i class="fa fa-user"></i> Daftar</a></li>
         <?php endif; ?>
         <?php if(isset($nim)): ?>
-          <li><a href="<?= base_url('peserta/cetak_ID') ?>"><i class="fa fa-download"></i> Cetak ID Card</a></li>
+          <li><a href="<?= base_url('index.php/peserta/cetak_ID') ?>"><i class="fa fa-download"></i> Cetak ID Card</a></li>
         <?php endif; ?>
         <?php if(!isset($nim)): ?>
           <li><a href="<?= base_url('index.php/login') ?>"><i class="fa fa-sign-in"></i> Login</a></li>

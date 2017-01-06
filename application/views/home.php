@@ -139,9 +139,9 @@
                     </li>
             
                     <?php if(!isset($nim)): ?>
-                      <li><a href="<?= base_url('login') ?>"><i class="fa fa-sign-in"></i> Login</a></li>
+                      <li><a href="<?= base_url('index.php/login') ?>"><i class="fa fa-sign-in"></i> Login</a></li>
                     <?php else: ?>
-                      <li><a href="<?= base_url('logout') ?>">Logout</a></li>
+                      <li><a href="<?= base_url('index.php/logout') ?>">Logout</a></li>
                     <?php endif; ?>
                 </ul>
             </div>
