@@ -15,7 +15,8 @@ class Regist extends CI_Controller{
 			// cek nim jika sudah daftar
 
 			$cek_data = $this->Peserta_model->cek_nim($this->input->post('nim'));
-
+			var_dump($cek_data);
+			exit;
 			if(count($cek_data) > 0){
 				$this->session->set_flashdata('msg', '<div class="alert alert-danger">Anda sudah mendaftar sebelumnya!</div>');
 				redirect('regist#daftar');
