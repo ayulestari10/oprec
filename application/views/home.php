@@ -492,7 +492,7 @@
                     <div class="panel-heading">
                             <h3 class="panel-title">Daftar OPREC BEM KM FASILKOM 2017</h3>
                             </div>
-                             <!-- <div>
+                             <div>
                                 <?php 
                                     $msg = $this->session->flashdata('msg');
 
@@ -528,7 +528,7 @@
                                 <input type="submit" value="Daftar" name="regist" class="btn btn-primary btn-block">
                             
                             </form> 
-                        </div>-->
+                        </div>
                         <div class="coun">
                             <div id="cd" class="cd" data-date="2017-01-08 00:00:00"></div>
                             <script type="text/javascript">
