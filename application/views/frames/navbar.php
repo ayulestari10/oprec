@@ -31,21 +31,21 @@
           <img src="<?= base_url('assets/img/logo.jpg') ?>">
         </div>
       </a>
-      <a class="navbar-brand" href="<?= base_url('') ?>">OPREC BEM KM FASILKOM</a>
+      <a class="navbar-brand" href="<?= base_url('index.php') ?>">OPREC BEM KM FASILKOM</a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
       <ul class="nav navbar-nav navbar-right">
         <?php if(!isset($nim)): ?>
-          <li><a href="<?= base_url('regist') ?>"><i class="fa fa-user"></i> Daftar</a></li>
+          <li><a href="<?= base_url('index.php/regist') ?>"><i class="fa fa-user"></i> Daftar</a></li>
         <?php endif; ?>
         <?php if(isset($nim)): ?>
           <li><a href="<?= base_url('peserta/cetak_ID') ?>"><i class="fa fa-download"></i> Cetak ID Card</a></li>
         <?php endif; ?>
         <?php if(!isset($nim)): ?>
-          <li><a href="<?= base_url('login') ?>"><i class="fa fa-sign-in"></i> Login</a></li>
+          <li><a href="<?= base_url('index.php/login') ?>"><i class="fa fa-sign-in"></i> Login</a></li>
         <?php else: ?>
-          <li><a href="<?= base_url('logout') ?>"><i class="fa fa-sign-out"></i> Logout</a></li>
+          <li><a href="<?= base_url('index.php/logout') ?>"><i class="fa fa-sign-out"></i> Logout</a></li>
         <?php endif; ?>
       </ul>
     </div>
