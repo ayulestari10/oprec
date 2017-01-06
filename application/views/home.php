@@ -83,8 +83,8 @@
         }
     </style>
 
-<!--    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css"> -->
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -202,11 +202,21 @@
 
     <!-- About Section -->
     <section id="about" class="container content-section text-center" style="background-color: #2fa4e7;">
-        <div class="row">
-            <div style="text-align: center; margin-bottom: 5%; margin-top: -15%;">
-                <h2>Dinas dan Divisi <br>BEM KM Fasilkom</h2>
+        <div class="row"  style="text-align: center; margin-bottom: 5%; margin-top: -15%;">
+            <div class="col-md-3 col-lg-offset-1">
+                <img src="<?= base_url('img/') ?>">
             </div>
-            <div class="col-lg-4 col-lg-offset-1" style="margin-left: 15%;">
+            <div class="col-md-3">
+                <div>
+                    <h2>Dinas dan Divisi <br>BEM KM Fasilkom</h2>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-1">
                 <ul>
                     <li><a class="page-scroll" href="#Kesekretariatan">Kesekretariatan</a></li>
                     <li><a class="page-scroll" href="#PSDM">PSDM</a></li>
