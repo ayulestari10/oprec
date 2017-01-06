@@ -57,3 +57,14 @@
 		<span>Dinas 2 : <?= $data->dinas2 ?></span><br>
 	</div>
 </div>
+
+<div style="margin-top: -100px;">
+	<p style="font-size: 16px;">
+		 Ketika Wawancara Open Recruitment BEM KM Fasilkom 2017. Peserta wajib membawa persyaratan berikut.<br>
+	    <ul>
+	    	<li>Uang akomodasi sebesar 20k untuk fasilitas makan siang, snack pagi dan sore.</li>
+	    	<li>Foto Close Up ukuran 4R.</li>
+	    	<li>Menggunakan ID CARD.</li>
+	    </ul>
+	</p>
+</div>
