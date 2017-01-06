@@ -138,14 +138,17 @@
                             <li><a class="page-scroll" href="#Mulmed">Multimedia</a></li>
                         </ul>
                     </li>
+
+                    <?php 
+                        $nim = $this->session->userdata('nim');
+                        if(!isset($nim)): 
+                    ?>
                     <li>
                         <a class="page-scroll" href="#daftar"><i class="fa fa-user"></i> Daftar</a>
                     </li>
-            
-                    <?php if(!isset($nim)): ?>
                       <li><a href="<?= base_url('index.php/login') ?>"><i class="fa fa-sign-in"></i> Login</a></li>
                     <?php else: ?>
-                      <li><a href="<?= base_url('index.php/logout') ?>">Logout</a></li>
+                      <li><a href="<?= base_url('index.php/peserta') ?>"><i class="fa fa-book"></i> Formulir</a></li>
                     <?php endif; ?>
                 </ul>
             </div>

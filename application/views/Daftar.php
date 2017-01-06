@@ -213,8 +213,12 @@
 			 		</select>
 			 	</div>
 			 	<div class="form-group">
-			 		<label for="ttl">Tempat tanggal lahir <span style="color: magenta;">* Tempat, dd-mm-yyyy</span></label>
-			 		 <input type="text" name="ttl" placeholder="Tempat Tanggal Lahir" class="form-control" value="<?= $dt->ttl ?>" required>
+			 		<label for="Tempat Lahir">Tempat Lahir</label>
+			 		 <input type="text" name="tempat" placeholder="Tempat Lahir" class="form-control" value="<?= $dt->tempat ?>" required>
+			 	</div>
+			 	<div class="form-group">
+			 		<label for="ttl">Tanggal lahir <span style="color: magenta;">* dd-mm-yyyy</span></label>
+			 		 <input type="text" name="ttl" placeholder="Tanggal Lahir" class="form-control" value="<?= $dt->ttl ?>" required>
 			 	</div>
 			 	<div class="form-group">
 			 		<label for="Nomor HP">Nomor HP</label>
@@ -251,7 +255,7 @@
 			<div class="col-md-6 col-md-offset-1">
 				<div class="form-group">
 					<label for="Alasan Masuk BEM">Alasan Masuk BEM</label>
-					<textarea name="alasan_bem" class="form-control"><?= $dt->alasan_bem ?></textarea>
+					<textarea name="alasan_bem" class="form-control" required><?= $dt->alasan_bem ?></textarea>
 				</div>
 				<div class="form-group">
 					<label for="Dinas/Divisi Pertama">Dinas/Divisi Pertama</label>

@@ -27,11 +27,11 @@ class Regist extends CI_Controller{
 						'password'	=> md5($this->input->post('password1'))
 					);
 					$this->Peserta_model->insert($input);
-					$this->session->set_flashdata('msg', '<div class="alert alert-success">Anda berhasil mendaftar!</div>');
+					$this->session->set_flashdata('msg', '<div class="alert alert-success">Anda berhasil mendaftar! Login dan lengkapi data!</div>');
 					redirect('regist#daftar');
 					exit;
 				} else {
-					$this->session->set_flashdata('msg', '<div class="alert alert-danger">Password dan Confirm Password Tidak Sama!</div>');
+					$this->session->set_flashdata('msg', '<div class="alert alert-danger">Password dan Konfirmasi Password Tidak Sama!</div>');
 					redirect('regist#daftar');
 					exit;
 				}

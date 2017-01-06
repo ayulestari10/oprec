@@ -28,6 +28,7 @@ class Peserta extends CI_Controller{
 				'jurusan'	=> $this->input->post('jurusan'),
 				'angkatan'	=> $this->input->post('angkatan'),
 				'alamat'	=> $this->input->post('alamat'),
+				'tempat'	=> $this->input->post('tempat'),
 				'ttl'		=> $this->input->post('ttl'),
 				'no_hp'		=> $this->input->post('no_hp'),
 				'dinas1'	=> $this->input->post('dinas1'),
@@ -37,7 +38,7 @@ class Peserta extends CI_Controller{
 			);
 
 			$this->Peserta_model->update($nim, $input);
-			$this->session->set_flashdata('msg', '<div class="alert alert-success">Data berhasil disimpan!</div>');
+			$this->session->set_flashdata('msg', '<div class="alert alert-success">Data berhasil disimpan! Cetak ID CARD!</div>');
 			redirect('Peserta');
 			exit;
 		}
