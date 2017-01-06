@@ -206,12 +206,16 @@
             </div>
         </div>
     </header>
-
+    <style type="text/css">
+        .logoo img{
+            width: 100%; height: 100%;
+        }
+    </style>
     <!-- About Section -->
     <section id="about" class="container content-section text-center" style="background-color: #2fa4e7;">
         <div class="row"  style="text-align: center; margin-bottom: 5%; margin-top: -15%;">
-            <div class="col-md-3">
-                <img src="<?= base_url('img/') ?>">
+            <div class="col-md-3 logoo">
+                <img src="<?= base_url('img/Unsri.png') ?>">
             </div>
             <div class="col-md-6">
                 <div>
