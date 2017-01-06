@@ -15,6 +15,9 @@
     background: url(<?= base_url('assets/img/header.png') ?>) no-repeat bottom center scroll;
     background-size: 1400px;
   }
+  #coba li a:hover{
+    background-color: #FD7F04;
+  }
 </style>
 
 <nav class="navbar navbar-inverse" id="pilihan">
@@ -35,7 +38,7 @@
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-2">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right" id="coba">
         <?php if(!isset($nim)): ?>
           <li><a href="<?= base_url('index.php/regist') ?>"><i class="fa fa-user"></i> Daftar</a></li>
         <?php endif; ?>
