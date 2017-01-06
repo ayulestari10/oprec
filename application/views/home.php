@@ -219,7 +219,7 @@
             </div>
             <div class="col-md-6">
                 <div>
-                    <h3>Dinas dan Divisi <br>BEM KM Fasilkom</h3>
+                    <h1>Dinas dan Divisi <br>BEM KM Fasilkom</h1>
                 </div>
             </div>
             <div class="col-sm-3 logoo">
