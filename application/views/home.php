@@ -505,7 +505,7 @@
     <section id="daftar" class="container content-section text-center" style="background-color: #2fa4e7;">
         <div class="container">
             <div class="row centered-form">
-            <div class="col-md-8 col-md-offset-2" style="height: 800px;">
+            <div class="col-md-8 col-md-offset-2" style="height: 800px; margin-top: -10%;" >
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h3 class="panel-title">Daftar OPREC BEM KM FASILKOM 2017</h3>
