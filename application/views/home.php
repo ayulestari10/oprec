@@ -502,22 +502,22 @@
     <section id="daftar" class="container content-section text-center" style="background-color: #2fa4e7;">
         <div class="container">
             <div class="row centered-form">
-            <div class="col-md-8 col-md-offset-2" style="height: 600px;">
+            <div class="col-md-8 col-md-offset-2" style="height: 800px;">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                            <h3 class="panel-title">Daftar OPREC BEM KM FASILKOM 2017</h3>
-                            </div>
-                             <div>
-                                <?php 
-                                    $msg = $this->session->flashdata('msg');
+                        <h3 class="panel-title">Daftar OPREC BEM KM FASILKOM 2017</h3>
+                    </div>
+                     <div>
+                        <?php 
+                            $msg = $this->session->flashdata('msg');
 
-                                    if(isset($msg)){
-                                        echo $msg;
-                                    }
-                                ?>
-                            </div>
+                            if(isset($msg)){
+                                echo $msg;
+                            }
+                        ?>
+                    </div>
             
-                            <div class="panel-body">
+                        <div class="panel-body">
                             <form role="form" action="<?= base_url('index.php/regist/proses') ?>" method="POST">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-12">
