@@ -30,7 +30,7 @@
 		<div class="row">
 			 <div class="col-md-6 col-md-offset-1">
 	<!-- 		 <div class="input-append"><input type="text" id="" name="" class="form-control"><span class="add-on"><i class="fa fa-book"></i></span></div> -->
-			<?php echo form_open_multipart('Peserta/daftar'); ?>
+			<?php echo form_open_multipart('index.php/Peserta/daftar'); ?>
 			 	<div class="form-group">
 			 		 <p>Nomor Induk Mahasiswa / NIM : <?= $dt->nim ?></p>
 			 	</div>

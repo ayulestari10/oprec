@@ -101,7 +101,7 @@
     	    <div class="col-md-12" id="log">
         	    <div class="form-wrap">
                 <h1 style="font-size: 400%; color: #424242" >LOGIN</h1>
-                    <form role="form" action="<?= base_url('login/peserta') ?>" method="post" id="login-form" autocomplete="off">
+                    <form role="form" action="<?= base_url('index.php/login/peserta') ?>" method="post" id="login-form" autocomplete="off">
                         <div class="form-group">
                             <!-- <label for="NIM">Nomor Induk Mahasiswa / NIM</label> -->
                             <input type="text" name="nim" class="form-control" placeholder="Nomor Induk Mahasiswa / NIM">
