@@ -72,7 +72,7 @@
             font-family: "Comic Sans MS", "Century Gothic";
         }
         #black li a:hover{
-            color: #FD7F04; 
+            background-color: #FD7F04; 
         }
         .logo_utama{
             width:50px; height: 50px; float: left;
@@ -222,12 +222,12 @@
         <div class="row">
             <div class="col-lg-4 col-lg-offset-2">
                 <ul>
-                    <li><a class="page-scroll" href="#Kesekretariatan">Kesekretariatan</a></li>
+                    <li><a class="page-scroll" href="#Kesekretariatan">Kestari</a></li>
                     <li><a class="page-scroll" href="#PSDM">PSDM</a></li>
                     <li><a class="page-scroll" href="#PTI">PTI</a></li>
-                    <li><a class="page-scroll" href="#Sosmas">Sosial dan Masyarakat</a></li>
+                    <li><a class="page-scroll" href="#Sosmas">Sosmas</a></li>
                     <li><a class="page-scroll" href="#Senbut">Seni dan Olahraga</a></li>
-                    <li><a class="page-scroll" href="#kwu">Kewirausahaan</a></li>
+                    <li><a class="page-scroll" href="#kwu">KWU</a></li>
                     <li><a class="page-scroll" href="#akademik">Akademik</a></li>
                 </ul>
             </div>
@@ -249,7 +249,7 @@
         <div class="row box">
             <div style="margin-top: 5%;">
                 <div class="col-md-6">
-                <h1><strong>Kesekretariatan</strong></h1>
+                <h1><strong>Kestari</strong></h1>
                     <p>
                         Dinas kesekretariatan merupakan dinas yang mengurus surat menyurat serta mengurus urusan rumah tangga BEM KM Fasilkom Unsri.
                     </p>
@@ -283,9 +283,9 @@
         <div class="row box">
             <div style="margin-top: 5%;">
                 <div class="col-md-6">
-                <h1><strong>Pengembangan Teknologi Informasi</strong></h1>
+                <h1><strong>PTI</strong></h1>
                     <p>
-                        Dinas PTI adalah dinas yang mengutamakan pengembangan teknologi tepat guna untuk BEM KM Fasilkom yang lebih maju.
+                        Dinas Pengembangan Teknologi Informasi adalah dinas yang mengutamakan pengembangan teknologi tepat guna untuk BEM KM Fasilkom yang lebih maju.
                     </p>
                 </div>
                 <div class="col-md-6 gambar">
@@ -344,7 +344,7 @@
                     <img src="<?= base_url('assets/img/coba.png') ?>">
                 </div>                
                 <div class="col-md-9">
-                <h1><strong>Kewirausahaan</strong></h1>
+                <h1><strong>KWU</strong></h1>
                     <p>
                         Dinas Kewirausahaan merupakan dinas intrnal dalam BEM KM Fasilkom yang mempunyai fungsi sebagai media bagi civitas akademika fasilkom unsri dalam mengembangankan kemampuan berwirausaha. dinas kewirausahaan juga menjadi ujung tombak bem km fasilkom dalam mencari pendanaan secara mandiri. dinas keuwirausahaan memiliki tantangan yang dihadapi berupa dunia bisnis dimana kgiatan kewirausahaan dapat berhubungan dengan kegiatan kemahasiswaan atau tidak sama skali. dalam kegiatannya, diberikan kebebasan dalam pengaturan konsep dan eksekusi kegiatan yang tetap berada dalam jalur yang ada dan berlaku. diharapkan pengembangan diri soft skill, hard skill dan pengalaman dalam dinas kewirausahaan akan menghasilkan kader yang ideal terutama dalam bidang entrepreneurship.
 
