@@ -58,7 +58,7 @@
 	</div>
 </div>
 
-<div style="margin-top: -100px;">
+<div style="margin-top: 60px;">
 	<p style="font-size: 16px;">
 		 Ketika Wawancara Open Recruitment BEM KM Fasilkom 2017. Peserta wajib membawa persyaratan berikut.<br>
 	    <ul>
