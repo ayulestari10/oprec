@@ -69,6 +69,7 @@
         }
         #black li a{
             color: #3D3A3A; 
+            font-family: cursive;
         }
         .logo_utama{
             width:50px; height: 50px; float: left;
@@ -216,7 +217,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-lg-offset-1">
+            <div class="col-lg-4 col-lg-offset-2">
                 <ul>
                     <li><a class="page-scroll" href="#Kesekretariatan">Kesekretariatan</a></li>
                     <li><a class="page-scroll" href="#PSDM">PSDM</a></li>
@@ -498,7 +499,7 @@
     <section id="daftar" class="container content-section text-center" style="background-color: #2fa4e7;">
         <div class="container" style="margin-top: -10%;">
             <div class="row centered-form">
-            <div class="col-md-5 col-md-offset-3" style="height: 600px;">
+            <div class="col-md-8 col-md-offset-2" style="height: 600px;">
                 <div class="panel panel-default">
                     <div class="panel-heading">
                             <h3 class="panel-title">Daftar OPREC BEM KM FASILKOM 2017</h3>
