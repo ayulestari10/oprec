@@ -69,7 +69,10 @@
         }
         #black li a{
             color: #3D3A3A; 
-            font-family: cursive;
+            font-family: "Comic Sans MS", "Century Gothic";
+        }
+        #black li a:hover{
+            color: #FD7F04; 
         }
         .logo_utama{
             width:50px; height: 50px; float: left;
@@ -204,12 +207,12 @@
     <!-- About Section -->
     <section id="about" class="container content-section text-center" style="background-color: #2fa4e7;">
         <div class="row"  style="text-align: center; margin-bottom: 5%; margin-top: -15%;">
-            <div class="col-md-3 col-lg-offset-1">
+            <div class="col-md-3">
                 <img src="<?= base_url('img/') ?>">
             </div>
-            <div class="col-md-3">
+            <div class="col-md-6">
                 <div>
-                    <h2>Dinas dan Divisi <br>BEM KM Fasilkom</h2>
+                    <h3>Dinas dan Divisi <br>BEM KM Fasilkom</h3>
                 </div>
             </div>
             <div class="col-sm-3">
@@ -497,7 +500,7 @@
     </section>
 
     <section id="daftar" class="container content-section text-center" style="background-color: #2fa4e7;">
-        <div class="container" style="margin-top: -10%;">
+        <div class="container">
             <div class="row centered-form">
             <div class="col-md-8 col-md-offset-2" style="height: 600px;">
                 <div class="panel panel-default">
