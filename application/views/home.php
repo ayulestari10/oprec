@@ -218,8 +218,8 @@
                 <img src="<?= base_url('assets/img/Unsri.png') ?>">
             </div>
             <div class="col-md-6">
-                <div style="font-size: 36px;">
-                    <h1>Dinas dan Divisi <br>BEM KM Fasilkom</h1>
+                <div style="font-size: 40px;">
+                    <h1>Dinas dan Divisi <br><br>BEM KM Fasilkom</h1>
                 </div>
             </div>
             <div class="col-sm-3 logoo">
