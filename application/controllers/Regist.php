@@ -18,7 +18,7 @@ class Regist extends CI_Controller{
 
 			if(count($cek_data) > 0){
 				$this->session->set_flashdata('msg', '<div class="alert alert-danger">Anda sudah mendaftar sebelumnya!</div>');
-				//redirect('regist#daftar');
+				redirect('regist#daftar');
 				exit;
 			} else {
 				if($this->input->post('password1') == $this->input->post('password2')){
@@ -28,17 +28,17 @@ class Regist extends CI_Controller{
 					);
 					$this->Peserta_model->insert($input);
 					$this->session->set_flashdata('msg', '<div class="alert alert-success">Anda berhasil mendaftar! Login dan lengkapi data!</div>');
-					//redirect('regist#daftar');
+					redirect('regist#daftar');
 					exit;
 				} else {
 					$this->session->set_flashdata('msg', '<div class="alert alert-danger">Password dan Konfirmasi Password Tidak Sama!</div>');
-					//redirect('regist#daftar');
+					redirect('regist#daftar');
 					exit;
 				}
 			}
 		 } else {
 			$this->session->set_flashdata('msg', '<div class="alert alert-danger">Registrasi Gagal!</div>');
-			//redirect('regist#daftar');
+			redirect('regist#daftar');
 			exit;
 		}
 	}
