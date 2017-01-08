@@ -30,6 +30,11 @@
 		width: 355px;
 		height: 90px;
 	}
+	#foto{
+		height: 152px;
+		width: 144px;
+		border: 1px solid black;
+	}
 </style>
 
 <div id="cover">
@@ -50,6 +55,9 @@
 				<?php endif; ?>
 			</strong></span>
 		</div><br>
+		<div id="foto">
+			
+		</div>
 		<span><strong><?= $data->nama ?></strong></span><br>
 		<span><?= $data->jurusan?></span><br>
 		<span><?= $data->angkatan ?></span><br>
