@@ -27,6 +27,7 @@ class Peserta extends CI_Controller{
 				'nama'		=> $this->input->post('nama'),
 				'jurusan'	=> $this->input->post('jurusan'),
 				'angkatan'	=> $this->input->post('angkatan'),
+				'ipk'		=> $this->input->post('ipk'),
 				'alamat'	=> $this->input->post('alamat'),
 				'tempat'	=> $this->input->post('tempat'),
 				'ttl'		=> $this->input->post('ttl'),
