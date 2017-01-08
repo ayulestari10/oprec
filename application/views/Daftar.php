@@ -213,6 +213,10 @@
 			 		</select>
 			 	</div>
 			 	<div class="form-group">
+			 		<label for="IPK">IPK</label>
+			 		 <input type="text" name="ipk" placeholder="IPK" class="form-control" value="<?= $dt->ipk ?>" required>
+			 	</div>
+			 	<div class="form-group">
 			 		<label for="Tempat Lahir">Tempat Lahir</label>
 			 		 <input type="text" name="tempat" placeholder="Tempat Lahir" class="form-control" value="<?= $dt->tempat ?>" required>
 			 	</div>
@@ -225,7 +229,7 @@
 			 		 <input type="text" name="no_hp" placeholder="Nomor HP" class="form-control" value="<?= $dt->no_hp ?>" required>
 			 	</div>
 			 	<div class="form-group">
-			 		<label for="ttl">ID Line</label>
+			 		<label for="ID Line">ID Line</label>
 			 		 <input type="text" name="id_line" placeholder="ID Line" class="form-control" value="<?= $dt->id_line ?>" required>
 			 	</div>
 			 	<div class="form-group">
