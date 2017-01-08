@@ -225,6 +225,10 @@
 			 		 <input type="text" name="no_hp" placeholder="Nomor HP" class="form-control" value="<?= $dt->no_hp ?>" required>
 			 	</div>
 			 	<div class="form-group">
+			 		<label for="ttl">ID Line</label>
+			 		 <input type="text" name="id_line" placeholder="ID Line" class="form-control" value="<?= $dt->id_line ?>" required>
+			 	</div>
+			 	<div class="form-group">
 			 		<label for="Alamat">Alamat</label>
 			 		 <textarea name="alamat" placeholder="Alamat" class="form-control" required><?= $dt->alamat ?></textarea>
 			 	</div>

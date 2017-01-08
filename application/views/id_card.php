@@ -53,8 +53,8 @@
 		<span><strong><?= $data->nama ?></strong></span><br>
 		<span><?= $data->jurusan?></span><br>
 		<span><?= $data->angkatan ?></span><br>
-		<span>Dinas 1 : <?= $data->dinas1 ?></span><br>
-		<span>Dinas 2 : <?= $data->dinas2 ?></span><br>
+		<p style="font-size: 18px; font-family: verdana;">Dinas 1 : <?= $data->dinas1 ?><br>
+		Dinas 2 : <?= $data->dinas2 ?></p>
 	</div>
 </div>
 

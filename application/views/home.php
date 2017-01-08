@@ -214,15 +214,15 @@
     <!-- About Section -->
     <section id="about" class="container content-section text-center" style="background-color: #2fa4e7;">
         <div class="row"  style="text-align: center; margin-bottom: 5%; margin-top: -15%;">
-            <div class="col-md-3 logoo">
+            <div class="col-md-2 logoo">
                 <img src="<?= base_url('assets/img/Unsri.png') ?>">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <div style="font-size: 40px;">
-                    <h1>Dinas dan Divisi <br><br>BEM KM Fasilkom</h1>
+                    <h1>Dinas dan Divisi <br><br>BEM KM Fasilkom <br> Universitas Sriwijaya</h1>
                 </div>
             </div>
-            <div class="col-sm-3 logoo">
+            <div class="col-sm-2 logoo">
                 <img src="<?= base_url('assets/img/bem.png') ?>">
             </div>
         </div>
@@ -551,12 +551,12 @@
                             
                             </form> 
                         </div>
-                        <div class="coun">
+                        <!-- <div class="coun">
                             <div id="cd" class="cd" data-date="2017-01-08 00:00:00"></div>
                             <script type="text/javascript">
                                 $(".cd").TimeCircles();
                             </script>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
