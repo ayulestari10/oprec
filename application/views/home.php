@@ -189,7 +189,7 @@
                 <div class="row">
                     <div class="col-md-8 col-sm-8 col-md-offset-2">
                         <div class="coun">
-                            <div id="cd" class="cd" data-date="2017-01-08 00:00:00"></div>
+                            <div id="cd" class="cd" data-date="2017-01-10 00:00:00"></div>
                             <script type="text/javascript">
                                 $(".cd").TimeCircles();
                             </script>
@@ -524,7 +524,7 @@
                         ?>
                     </div>
             
-                        <div class="panel-body">
+                        <!-- <div class="panel-body">
                             <form role="form" action="<?= base_url('index.php/regist/proses') ?>" method="POST">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-12">
@@ -550,7 +550,7 @@
                                 <input type="submit" value="Daftar" name="regist" class="btn btn-primary btn-block">
                             
                             </form> 
-                        </div>
+                        </div> -->
                         <!-- <div class="coun">
                             <div id="cd" class="cd" data-date="2017-01-08 00:00:00"></div>
                             <script type="text/javascript">
