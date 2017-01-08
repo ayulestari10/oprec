@@ -15,7 +15,7 @@
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/font-awesome/css/font-awesome.css') ?>">
 
-    <link rel="shortcut icon" href="<?= base_url('assets/img/logo.jpg') ?>">
+    <link rel="shortcut icon" href="<?= base_url('assets/img/bem.png') ?>">
 
     <script type="text/javascript" src="<?= base_url('assets/jquery/jquery.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('assets/bootstrap/js/bootstrap.min.js') ?>"></script>
