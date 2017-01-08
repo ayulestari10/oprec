@@ -248,9 +248,9 @@
 				  <div class="panel-body">
 				    Ketika Wawancara Open Recruitment BEM KM Fasilkom 2017. Peserta wajib membawa persyaratan berikut.<br>
 				    <ul>
-				    	<li>Uang akomodasi sebesar 20k untuk fasilitas makan siang, snack pagi dan sore.</li>
-				    	<li>Foto Close Up ukuran 4R.</li>
-				    	<li>Menggunakan ID CARD.</li>
+				    	<li>Membawa uang akomodasi sebesar Rp. 20.000 untuk fasilitas makan siang dan snack pada saat workshop.</li>
+				    	<li>Membawa foto diri close up ukuran 3r (1lembar).</li>
+				    	<li>Menggunakan Kartu peserta yang telah di download dari web pendaftaran.</li>
 				    </ul>
 				  </div>
 				</div>
@@ -315,9 +315,9 @@
 				  <div class="panel-body">
 				    Ketika Wawancara Open Recruitment BEM KM Fasilkom 2017. Peserta wajib membawa persyaratan berikut.<br>
 				    <ul>
-				    	<li>Uang akomodasi sebesar 20k untuk fasilitas makan siang, snack pagi dan sore.</li>
-				    	<li>Foto Close Up ukuran 4R.</li>
-				    	<li>Menggunakan ID CARD.</li>
+				    	<li>Membawa uang akomodasi sebesar Rp. 20.000 untuk fasilitas makan siang dan snack pada saat workshop.</li>
+				    	<li>Membawa foto diri close up ukuran 3r (1lembar).</li>
+				    	<li>Menggunakan Kartu peserta yang telah di download dari web pendaftaran.</li>
 				    </ul>
 				  </div>
 				</div>
@@ -348,9 +348,9 @@
 				  <div class="panel-body">
 				    Ketika Wawancara Open Recruitment BEM KM Fasilkom 2017. Peserta wajib membawa persyaratan berikut.<br>
 				    <ul>
-				    	<li>Uang akomodasi sebesar 20k untuk fasilitas makan siang, snack pagi dan sore.</li>
-				    	<li>Foto Close Up ukuran 4R.</li>
-				    	<li>Menggunakan ID CARD.</li>
+				    	<li>Membawa uang akomodasi sebesar Rp. 20.000 untuk fasilitas makan siang dan snack pada saat workshop.</li>
+				    	<li>Membawa foto diri close up ukuran 3r (1lembar).</li>
+				    	<li>Menggunakan Kartu peserta yang telah di download dari web pendaftaran.</li>
 				    </ul>
 				  </div>
 				</div>

@@ -36,8 +36,8 @@
 		border: 1px solid black;
 		margin: 0 auto;
 		text-align: center;
-		padding: 30px;
-		margin-top: 10px; margin-bottom: 10px;
+		padding: 100px;
+		margin-top: 10px; margin-bottom: 15px;
 	}
 </style>
 
@@ -48,7 +48,7 @@
 		</div>
 	</div>
 	<div class="body">
-		<div style="margin-top: -5px; margin-bottom: -40px;">
+		<div style="margin-bottom: -40px;">
 			<span style="font-size: 130px;"><strong>
 				<?php if($data->id_data > 0 && $data->id_data <= 9): ?>
 					<?= '00'.$data->id_data ?>
@@ -74,9 +74,9 @@
 	<p style="font-size: 16px;">
 		 Ketika Wawancara Open Recruitment BEM KM Fasilkom 2017. Peserta wajib membawa persyaratan berikut.<br>
 	    <ul>
-	    	<li>Uang akomodasi sebesar 20k untuk fasilitas makan siang, snack pagi dan sore.</li>
-	    	<li>Foto Close Up ukuran 4R.</li>
-	    	<li>Menggunakan ID CARD.</li>
+	    	<li>Membawa uang akomodasi sebesar Rp. 20.000 untuk fasilitas makan siang dan snack pada saat workshop.</li>
+	    	<li>Membawa foto diri close up ukuran 3r (1lembar).</li>
+	    	<li>Menggunakan Kartu peserta yang telah di download dari web pendaftaran.</li>
 	    </ul>
 	</p>
 </div>
