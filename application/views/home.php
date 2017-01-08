@@ -551,12 +551,12 @@
                             
                             </form> 
                         </div> -->
-                        <!-- <div class="coun">
-                            <div id="cd" class="cd" data-date="2017-01-08 00:00:00"></div>
+                        <div class="coun">
+                            <div id="cd" class="cd" data-date="2017-01-09 00:00:00"></div>
                             <script type="text/javascript">
                                 $(".cd").TimeCircles();
                             </script>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
