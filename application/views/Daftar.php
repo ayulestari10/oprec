@@ -275,7 +275,7 @@
 				 			<option value="Dinas PTI">Dinas PTI</option>
 				 			<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>
 				 			<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>
-				 			<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>
+				 			<option value="Dinas Kastrad">Dinas Kastrad</option>
 				 			<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>
 				 			<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>
 				 			<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>
@@ -290,7 +290,7 @@
 				 			<option value="Dinas PTI">Dinas PTI</option>
 				 			<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>
 				 			<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>
-				 			<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>
+				 			<option value="Dinas Kastrad">Dinas Kastrad</option>
 				 			<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>
 				 			<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>
 				 			<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>
@@ -384,7 +384,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -399,7 +399,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -413,7 +413,7 @@
 			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -427,7 +427,7 @@
 			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -441,7 +441,7 @@
 			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -449,7 +449,7 @@
 			'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
 			'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
 			'<option value="Dinas Akademik">Dinas Akademik</option>');
-		} else if(dinas1 === 'Dinas Kajian Strategi dan Advokasi'){
+		} else if(dinas1 === 'Dinas Kastrad'){
 			$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
 			'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
 			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
@@ -484,7 +484,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
 			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
@@ -498,7 +498,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
@@ -512,7 +512,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -526,7 +526,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -540,7 +540,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -554,7 +554,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -568,7 +568,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
