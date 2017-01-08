@@ -219,7 +219,7 @@
             </div>
             <div class="col-md-8">
                 <div style="font-size: 40px;">
-                    <h1>Dinas dan Divisi <br><br>BEM KM Fasilkom <br> Universitas Sriwijaya</h1>
+                    <h1>Dinas dan Divisi <br>BEM KM Fasilkom <br> Universitas Sriwijaya</h1>
                 </div>
             </div>
             <div class="col-sm-2 logoo">
