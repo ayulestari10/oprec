@@ -361,7 +361,7 @@
         </div>
     </section>
 
-    <!-- Akademik Section -->
+    <!-- Akademik Section -->  
     <section id="akademik" class="container content-section text-center" style="background-color: #2fa4e7;">
         <div class="row box">
             <div style="margin-top: 5%;">
