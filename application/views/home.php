@@ -189,7 +189,7 @@
                 <div class="row">
                     <div class="col-md-8 col-sm-8 col-md-offset-2">
                         <div class="coun">
-                            <div id="cd" class="cd" data-date="2017-01-10 00:00:00"></div>
+                            <div id="cd" class="cd" data-date="2017-01-09 00:00:00"></div>
                             <script type="text/javascript">
                                 $(".cd").TimeCircles();
                             </script>
