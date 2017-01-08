@@ -34,6 +34,9 @@
 		height: 152px;
 		width: 144px;
 		border: 1px solid black;
+		margin: 0 auto;
+		text-align: center;
+		padding: 50%;
 	}
 </style>
 
@@ -56,7 +59,7 @@
 			</strong></span>
 		</div><br>
 		<div id="foto">
-			
+			3x4
 		</div>
 		<span><strong><?= $data->nama ?></strong></span><br>
 		<span><?= $data->jurusan?></span><br>
