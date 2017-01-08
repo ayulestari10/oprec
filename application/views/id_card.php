@@ -37,6 +37,7 @@
 		margin: 0 auto;
 		text-align: center;
 		padding: 30px;
+		margin-top: 10px; margin-bottom: 10px;
 	}
 </style>
 
@@ -47,7 +48,7 @@
 		</div>
 	</div>
 	<div class="body">
-		<div style="margin-top: -10px; margin-bottom: -40px;">
+		<div style="margin-top: -5px; margin-bottom: -40px;">
 			<span style="font-size: 130px;"><strong>
 				<?php if($data->id_data > 0 && $data->id_data <= 9): ?>
 					<?= '00'.$data->id_data ?>
