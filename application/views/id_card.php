@@ -36,7 +36,7 @@
 		border: 1px solid black;
 		margin: 0 auto;
 		text-align: center;
-		padding: 50%;
+		padding: 30px;
 	}
 </style>
 
