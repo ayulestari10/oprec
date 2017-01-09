@@ -25,7 +25,7 @@
     <style type="text/css">
         body{
             background-color: white;
-            color: black;
+            color: black !important; 
         }
         #cd {
             color: black;
@@ -244,7 +244,7 @@
                 <img src="<?= base_url('assets/img/bem.png') ?>">
             </div>
         </div>
-        <div class="row" style="background-color: rgba(254, 155, 3, 0.2); border-radius: 20%;">
+        <div class="row" style="color: black !important;">
             <div class="col-lg-4 col-lg-offset-2">
                 <ul>
                     <li style="color: black;"><a class="page-scroll" href="#Kesekretariatan">Kestari</a></li>
