@@ -49,16 +49,16 @@
         ul li a{color: white;}
         .box{
             min-width: 300px; min-height: 300px;
-            border: 10px double white;
+            border: 10px double #FD7F04;
             margin-top: -8%;
         }
         .box2{
             min-width: 300px; min-height: 300px;
-            border: 10px groove white;
+            border: 10px groove #FD7F04;
             margin-top: -8%;
         }
         .gambar img{
-            width: 200px; height: 200px;
+            width: 250px; height: 300px;
         }
         .centered-form{
             margin-top: 60px;
@@ -220,7 +220,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="container content-section text-center"  >
+    <section id="about" class="container content-section text-center" style="color: black;">
         <div class="row"  style="text-align: center; margin-bottom: 5%; margin-top: -15%;">
             <div class="col-md-2 logoo">
                 <img src="<?= base_url('assets/img/Unsri.png') ?>">
