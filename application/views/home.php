@@ -205,15 +205,15 @@
             width: 100%; height: 100%;
         }
         #inti{
-            margin-top: -50%;
+            margin-top: -80%;
             background: url(<?= base_url('assets/img/header.png') ?>) no-repeat bottom center scroll;
             background-size: contain;
-            height: 900px;
-            -moz-background-size: 1400px 900px;
-            background-size: 1400px 1100px;
+            height: 1000px;
+            -moz-background-size: 1400px 1000px;
+            background-size: 1400px 1000px;
         }
         #inti img{
-            width: 100%; height: 800px;
+            width: 100%; height: 900px;
         }
     </style>
 
