@@ -205,7 +205,7 @@
             width: 100%; height: 100%;
         }
         #inti{
-            margin-top: -60%;
+            margin-top: -20%;
             background: url(<?= base_url('assets/img/header.png') ?>) no-repeat bottom center scroll;
             background-size: contain;
             height: 1000px;
