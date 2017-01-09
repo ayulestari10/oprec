@@ -58,7 +58,7 @@
             margin-top: -8%;
         }
         .gambar img{
-            width: 300px; height: 350px;
+            width: 300px; height: 320px;
         }
         .centered-form{
             margin-top: 60px;
