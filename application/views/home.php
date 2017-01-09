@@ -354,8 +354,8 @@
     <!-- KWU Section -->
     <section id="kwu" class="container content-section text-center"  >
         <div class="row box2">
-            <div style="margin-top: 5%;">
-                <div class="col-md-3 gambar" style="margin: 0 auto;">
+            <div style="margin-top: 5%; min-height: 450px;">
+                <div class="col-md-4 gambar" style="margin: 0 auto;">
                     <img src="<?= base_url('assets/img/dinas/kwu.png') ?>">
                 </div>                
                 <div class="col-md-8">
@@ -385,7 +385,7 @@
                         </ol>
                     </p>
                 </div>
-                <div class="col-md-3 gambar">
+                <div class="col-md-3 gambar" style="margin: 0 auto;">
                    <img src="<?= base_url('assets/img/dinas/akademik.png') ?>">
                 </div>                
             </div>
@@ -396,7 +396,7 @@
     <section id="Kastrad" class="container content-section text-center"  >
         <div class="row box2">
             <div style="margin-top: 5%; margin-bottom: 5%;">
-                <div class="col-md-3 gambar">
+                <div class="col-md-4 gambar" style="margin: 0 auto;">
                    <img src="<?= base_url('assets/img/dinas/kastrad.png') ?>">
                 </div>                
                 <div class="col-md-8">
@@ -459,7 +459,7 @@
                         Struktural Dinas Media dan Informasi terbagi menjadi dua divisi, yaitu Divisi Hubungan Masyarakat dan Divisi Multimedia.<br>
                     </p>
                 </div>
-                <div class="col-md-3 gambar">
+                <div class="col-md-3 gambar" style="margin: 0 auto;">
                     <img src="<?= base_url('assets/img/dinas/medinfo.png') ?>">
                 </div>                
             </div>
@@ -474,7 +474,7 @@
                 <h1><strong>Hubungan Masyarakat</strong></h1>
                     <p>
                         Divisi Hubungan Masyarakat :
-                        <ol style="text-align: left; font-size: 16px;">
+                        <ol style="text-align: left; font-size: 18px;">
                             <li>Bertanggung jawab dalam informasi yang ada di Fakultas maupun diluar Fakultas agar dapat sampai ke Civitas Akademika Fasilkom Unsri</li>
                             <li>Membangun komunikasi antara BEM dan Civitas Akademika Fakultas maupun luar Fakultas</li>
                         </ol>
