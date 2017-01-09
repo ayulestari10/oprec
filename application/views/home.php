@@ -235,8 +235,8 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-4 col-lg-offset-2" style="color: black;">
-                <ul>
+            <div class="col-lg-4 col-lg-offset-2">
+                <ul style="color: black;">
                     <li><a class="page-scroll" href="#Kesekretariatan">Kestari</a></li>
                     <li><a class="page-scroll" href="#PSDM">PSDM</a></li>
                     <li><a class="page-scroll" href="#PTI">PTI</a></li>
@@ -246,8 +246,8 @@
                     <li><a class="page-scroll" href="#akademik">Akademik</a></li>
                 </ul>
             </div>
-            <div class="col-lg-4" style="color: black;">
-                <ul>
+            <div class="col-lg-4">
+                <ul style="color: black;">
                     <li><a class="page-scroll" href="#Kastrad">Kajian Strategi dan Advokasi</a></li>
                     <li><a class="page-scroll" href="#Polstrad">Politik Kajian Strategi</a></li>
                     <li><a class="page-scroll" href="#Adkam">Advokasi Kampus</a></li>
