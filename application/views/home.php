@@ -48,17 +48,17 @@
         }
         ul li a{color: white;}
         .box{
-            min-width: 300px; min-height: 300px;
+            min-width: 300px; min-height: 400px;
             border: 10px double #FD7F04;
             margin-top: -8%;
         }
         .box2{
-            min-width: 300px; min-height: 300px;
+            min-width: 300px; min-height: 400px;
             border: 10px groove #FD7F04;
             margin-top: -8%;
         }
         .gambar img{
-            width: 250px; height: 300px;
+            width: 300px; height: 350px;
         }
         .centered-form{
             margin-top: 60px;
