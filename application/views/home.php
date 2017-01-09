@@ -215,7 +215,7 @@
 
     <section class="container content-section text-center">
         <div class="row" id="inti">
-            <img src="<?= base_url('assets/img/inti2.jpg') ?>">
+            <img src="<?= base_url('assets/img/dinas/inti.png') ?>">
         </div>
     </section>
 
@@ -234,7 +234,7 @@
                 <img src="<?= base_url('assets/img/bem.png') ?>">
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="color: black;">
             <div class="col-lg-4 col-lg-offset-2">
                 <ul>
                     <li><a class="page-scroll" href="#Kesekretariatan">Kestari</a></li>
@@ -386,7 +386,7 @@
                     </p>
                 </div>
                 <div class="col-md-3 gambar">
-                   <img src="<?= base_url('assets/img/dinas/kastrad.png') ?>">
+                   <img src="<?= base_url('assets/img/dinas/akademik.png') ?>">
                 </div>                
             </div>
         </div>
