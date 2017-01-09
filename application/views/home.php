@@ -212,11 +212,15 @@
             width: 100%; height: 100%;
         }
     </style>
-    <!-- About Section -->
-    <section id="about" class="container content-section text-center" style="background-color: #2fa4e7;">
+
+    <section class="container content-section text-center">
         <div class="row" id="inti">
             <img src="<?= base_url('assets/img/inti2.jpg') ?>">
         </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container content-section text-center"  >
         <div class="row"  style="text-align: center; margin-bottom: 5%; margin-top: -15%;">
             <div class="col-md-2 logoo">
                 <img src="<?= base_url('assets/img/Unsri.png') ?>">
@@ -256,7 +260,7 @@
     </section>
 
     <!-- Kestari Section -->
-    <section id="Kesekretariatan" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Kesekretariatan" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
                 <div class="col-md-6">
@@ -273,7 +277,7 @@
     </section>
 
     <!-- PSDM  Section -->
-    <section id="PSDM" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="PSDM" class="container content-section text-center"  >
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-6 gambar">
@@ -290,7 +294,7 @@
     </section>
 
     <!-- PTI Section -->
-    <section id="PTI" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="PTI" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
                 <div class="col-md-6">
@@ -307,7 +311,7 @@
     </section>
 
     <!-- Sosmas  Section -->
-    <section id="Sosmas" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Sosmas" class="container content-section text-center"  >
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-4 gambar">
@@ -331,7 +335,7 @@
     </section>
 
     <!-- Senbut Section -->
-    <section id="Senbut" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Senbut" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
                 <div class="col-md-6">
@@ -348,7 +352,7 @@
     </section>
 
     <!-- KWU Section -->
-    <section id="kwu" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="kwu" class="container content-section text-center"  >
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-3 gambar">
@@ -366,7 +370,7 @@
     </section>
 
     <!-- Akademik Section -->  
-    <section id="akademik" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="akademik" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
                 <div class="col-md-9">
@@ -389,7 +393,7 @@
     </section>
 
     <!-- Kastrad Section -->
-    <section id="Kastrad" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Kastrad" class="container content-section text-center"  >
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-3 gambar">
@@ -415,7 +419,7 @@
     </section>
 
     <!-- Polstrad Section -->
-    <section id="Polstrad" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Polstrad" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
                 <div class="col-md-9">
@@ -433,7 +437,7 @@
     </section>
 
     <!-- Adkam Section -->
-    <section id="Adkam" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Adkam" class="container content-section text-center"  >
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-3 gambar">
@@ -450,7 +454,7 @@
     </section>
 
     <!-- Medinfo Section -->
-    <section id="Medinfo" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Medinfo" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
                 <div class="col-md-9">
@@ -469,7 +473,7 @@
     </section>
 
     <!-- Humas Section -->
-    <section id="Humas" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Humas" class="container content-section text-center"  >
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-3 gambar">
@@ -490,7 +494,7 @@
     </section>
 
     <!-- Mulmed Section -->
-    <section id="Mulmed" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Mulmed" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
                 <div class="col-md-9">
@@ -510,7 +514,7 @@
         </div>
     </section>
 
-    <section id="daftar" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="daftar" class="container content-section text-center"  >
         <div class="container">
             <div class="row centered-form">
             <div class="col-md-8 col-md-offset-2" style="height: 800px; margin-top: -10%;" >
