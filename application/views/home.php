@@ -24,7 +24,8 @@
 
     <style type="text/css">
         body{
-            background-color: #2fa4e7;
+            background-color: white;
+            color: black;
         }
         #cd {
             color: black;
@@ -189,7 +190,7 @@
                 <div class="row">
                     <div class="col-md-8 col-sm-8 col-md-offset-2">
                         <div class="coun">
-                            <div id="cd" class="cd" data-date="2017-01-09 00:00:00"></div>
+                            <div id="cd" class="cd" data-date="2017-01-10 00:00:00"></div>
                             <script type="text/javascript">
                                 $(".cd").TimeCircles();
                             </script>
@@ -213,6 +214,9 @@
     </style>
     <!-- About Section -->
     <section id="about" class="container content-section text-center" style="background-color: #2fa4e7;">
+        <div class="row" id="inti">
+            <img src="<?= base_url('assets/img/inti2.jpg') ?>">
+        </div>
         <div class="row"  style="text-align: center; margin-bottom: 5%; margin-top: -15%;">
             <div class="col-md-2 logoo">
                 <img src="<?= base_url('assets/img/Unsri.png') ?>">
@@ -262,7 +266,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
+                    <img src="<?= base_url('assets/img/kestari.jpg') ?>">
                 </div>                
             </div>
         </div>
@@ -337,7 +341,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
+                    <img src="<?= base_url('assets/img/senbut.jpg') ?>">
                 </div>                
             </div>
         </div>
@@ -348,7 +352,7 @@
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
+                    <img src="<?= base_url('assets/img/kwu.jpg') ?>">
                 </div>                
                 <div class="col-md-9">
                 <h1><strong>KWU</strong></h1>
@@ -458,7 +462,7 @@
                     </p>
                 </div>
                 <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
+                    <img src="<?= base_url('assets/img/medinfo.jpg') ?>">
                 </div>                
             </div>
         </div>
@@ -469,7 +473,7 @@
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
+                    <img src="<?= base_url('assets/img/medinfo.jpg') ?>">
                 </div>                
                 <div class="col-md-9">
                 <h1><strong>Hubungan Masyarakat</strong></h1>
@@ -500,7 +504,7 @@
                     </p>
                 </div>
                 <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
+                    <img src="<?= base_url('assets/img/medinfo.jpg') ?>">
                 </div>                
             </div>
         </div>
@@ -552,7 +556,7 @@
                             </form> 
                         </div> -->
                         <div class="coun">
-                            <div id="cd" class="cd" data-date="2017-01-09 00:00:00"></div>
+                            <div id="cd" class="cd" data-date="2017-01-10 00:00:00"></div>
                             <script type="text/javascript">
                                 $(".cd").TimeCircles();
                             </script>

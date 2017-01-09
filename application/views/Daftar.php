@@ -213,7 +213,7 @@
 			 		</select>
 			 	</div>
 			 	<div class="form-group">
-			 		<label for="IPK">IPK</label>
+			 		<label for="IPK">IPK <span style="color: #C6C2C2">Contoh 3,74</span></label>
 			 		 <input type="text" name="ipk" placeholder="IPK" class="form-control" value="<?= $dt->ipk ?>" required>
 			 	</div>
 			 	<div class="form-group">
@@ -226,7 +226,7 @@
 			 	</div>
 			 	<div class="form-group">
 			 		<label for="Nomor HP">Nomor HP</label>
-			 		 <input type="text" name="no_hp" placeholder="Nomor HP" class="form-control" value="<?= $dt->no_hp ?>" required>
+			 		 <input type="text" name="no_hp" placeholder="Nomor HP" class="form-control" value="<?= $dt->no_hp ?>" onkeyup="validAngka(this)" required>
 			 	</div>
 			 	<div class="form-group">
 			 		<label for="ID Line">ID Line</label>
@@ -242,7 +242,7 @@
 
 			 <div class="col-md-4 col-md-offset-1">
 			 	<div class="panel panel-primary">
-				  <div class="panel-heading">
+				  <div class="panel-heading">	
 				    <h3 class="panel-title">Info</h3>
 				  </div>
 				  <div class="panel-body">
@@ -363,6 +363,14 @@
 
 <script type="text/javascript">
 	var dinas1;
+
+	function validAngka(a)
+    {
+        if(!/^[0-9.]+$/.test(a.value))
+        {
+        a.value = a.value.substring(0,a.value.length-1000);
+        }
+    }
 
 	function lanjut(){
 		$("#biodata").css("display", "none");

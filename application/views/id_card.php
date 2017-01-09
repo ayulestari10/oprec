@@ -8,21 +8,13 @@
 		background: url('<?= base_url("assets/img/header.png") ?>');
 		background-size: contain;
 	}	
-	/*.box{
-		width: 340px;
-		height: 480px;
-		border-radius: 10%;
-		margin: 0 auto;
-		margin-top: 10px;
-		background: white; 
-	}*/
 	.header{
 		margin-top: 5px;  
 		width: 355px;
 		height: 90px;
 	}
 	span{
-		font-size: 18px;
+		font-size: 14px;
 		font-family: verdana;
 	}
 	.body{text-align: center;}
@@ -48,8 +40,13 @@
 		</div>
 	</div>
 	<div class="body">
-		<div style="margin-bottom: -40px;">
-			<span style="font-size: 130px;"><strong>
+		<div id="foto">
+			3x4<br>
+			FOTO <br>
+			CLOSE UP
+		</div>
+		<div>
+			<span style="font-size: 126px;"><strong>
 				<?php if($data->id_data > 0 && $data->id_data <= 9): ?>
 					<?= '00'.$data->id_data ?>
 				<?php elseif($data->id_data > 9 && $data->id_data <= 99): ?>
@@ -58,20 +55,18 @@
 					<?= $data->id_data ?>
 				<?php endif; ?>
 			</strong></span>
-		</div><br>
-		<div id="foto">
-			3x4
 		</div>
 		<span><strong><?= $data->nama ?></strong></span><br>
 		<span><?= $data->jurusan?></span><br>
 		<span><?= $data->angkatan ?></span><br>
-		<p style="font-size: 18px; font-family: verdana;">Dinas 1 : <?= $data->dinas1 ?><br>
+		<p style="font-size: 14px; font-family: verdana;">Dinas 1 : <?= $data->dinas1 ?><br>
 		Dinas 2 : <?= $data->dinas2 ?></p>
+		<span style="font-size: 15px;"><strong>OPEN RECRUITMENT<br>BEM KM FASILKOM UNSRI 2017</strong></span>
 	</div>
 </div>
 
 <div style="margin-top: 60px;">
-	<p style="font-size: 16px;">
+	<p style="font-size: 14px;">
 		 Ketika Wawancara Open Recruitment BEM KM Fasilkom 2017. Peserta wajib membawa persyaratan berikut.<br>
 	    <ul>
 	    	<li>Membawa uang akomodasi sebesar Rp. 20.000 untuk fasilitas makan siang dan snack pada saat workshop.</li>
