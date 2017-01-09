@@ -234,8 +234,8 @@
                 <img src="<?= base_url('assets/img/bem.png') ?>">
             </div>
         </div>
-        <div class="row" style="color: black;">
-            <div class="col-lg-4 col-lg-offset-2">
+        <div class="row">
+            <div class="col-lg-4 col-lg-offset-2" style="color: black;">
                 <ul>
                     <li><a class="page-scroll" href="#Kesekretariatan">Kestari</a></li>
                     <li><a class="page-scroll" href="#PSDM">PSDM</a></li>
@@ -246,7 +246,7 @@
                     <li><a class="page-scroll" href="#akademik">Akademik</a></li>
                 </ul>
             </div>
-            <div class="col-lg-4">
+            <div class="col-lg-4" style="color: black;">
                 <ul>
                     <li><a class="page-scroll" href="#Kastrad">Kajian Strategi dan Advokasi</a></li>
                     <li><a class="page-scroll" href="#Polstrad">Politik Kajian Strategi</a></li>
