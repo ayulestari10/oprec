@@ -197,13 +197,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-8 col-sm-8 col-lg-offset-2">
-                        <a href="#about" class="btn btn-circle page-scroll" style="color: black;">
-                            <i class="fa fa-angle-double-down animated" style="color: black;"></i>
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
     </header>
@@ -214,17 +207,24 @@
         #inti{
             background: url(<?= base_url('assets/img/header.png') ?>) no-repeat bottom center scroll;
             background-size: contain;
-            height: 800px;
+            height: 900px;
             -moz-background-size: 1400px 1100px;
             background-size: 1400px 1100px;
         }
         #inti img{
-            width: 100%; height: 500px;
+            width: 100%; height: 800px;
         }
     </style>
 
     <section class="content-section text-center" id="inti">
         <img src="<?= base_url('assets/img/dinas/inti.png') ?>">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-lg-offset-2">
+                <a href="#about" class="btn btn-circle page-scroll" style="color: black;">
+                    <i class="fa fa-angle-double-down animated" style="color: black;"></i>
+                </a>
+            </div>
+        </div>
     </section>
 
     <!-- About Section -->
