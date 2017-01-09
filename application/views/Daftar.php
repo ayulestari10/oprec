@@ -214,7 +214,7 @@
 			 	</div>
 			 	<div class="form-group">
 			 		<label for="IPK">IPK <span style="color: #C6C2C2">Contoh 3,74</span></label>
-			 		 <input type="text" name="ipk" placeholder="IPK" class="form-control" value="<?= $dt->ipk ?>" required>
+			 		 <input type="number" max="4" min="2" name="ipk" placeholder="IPK" class="form-control" value="<?= $dt->ipk ?>" required>
 			 	</div>
 			 	<div class="form-group">
 			 		<label for="Tempat Lahir">Tempat Lahir</label>
