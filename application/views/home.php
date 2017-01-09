@@ -457,7 +457,7 @@
     <section id="Medinfo" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
-                <div class="col-md-8">
+                <div class="col-md-7">
                 <h1><strong>Media dan Informasi</strong></h1>
                     <p>
                         Media dan Informasi (Medinfo) adalah salah satu dinas di BEM KM Fasilkom Unsri yang mana bertanggung jawab mengenai informasi dan dokumentasi. Dinas ini merupakan dinas yang mendukung BEM KM Fasilkom Unsri dalam menjalankan Visi dan Misinya dari belakang layar agar dapat terlaksana dengan baik. Komunikatif, Informatif, Kreatif dan Apresiatif merupakan hal yang diusung oleh Dinas Medinfo.<br>
@@ -497,7 +497,7 @@
     <section id="Mulmed" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
-                <div class="col-md-8">
+                <div class="col-md-7">
                 <h1><strong>Multimedia</strong></h1>
                     <p>
                          Divisi multimedia :
