@@ -262,7 +262,7 @@
     <!-- Kestari Section -->
     <section id="Kesekretariatan" class="container content-section text-center"  >
         <div class="row box">
-            <div style="margin-top: 5%;">
+            <div style="margin-top: 5%; margin-bottom: 5%;">
                 <div class="col-md-6">
                 <h1><strong>Kestari</strong></h1>
                     <p>
@@ -296,7 +296,7 @@
     <!-- PTI Section -->
     <section id="PTI" class="container content-section text-center"  >
         <div class="row box">
-            <div style="margin-top: 5%;">
+            <div style="margin-top: 5%; margin-bottom: 5%;">
                 <div class="col-md-6">
                 <h1><strong>PTI</strong></h1>
                     <p>
@@ -314,7 +314,7 @@
     <section id="Sosmas" class="container content-section text-center"  >
         <div class="row box2">
             <div style="margin-top: 5%;">
-                <div class="col-md-4 gambar">
+                <div class="col-md-4 gambar" style="margin: 0 auto;">
                     <img src="<?= base_url('assets/img/dinas/sosmas.png') ?>">
                 </div>                
                 <div class="col-md-8">
@@ -337,7 +337,7 @@
     <!-- Senbut Section -->
     <section id="Senbut" class="container content-section text-center"  >
         <div class="row box">
-            <div style="margin-top: 5%;">
+            <div style="margin-top: 5%; margin-bottom: 5%;">
                 <div class="col-md-6">
                 <h1><strong>Seni dan Olahraga</strong></h1>
                     <p>
@@ -355,10 +355,10 @@
     <section id="kwu" class="container content-section text-center"  >
         <div class="row box2">
             <div style="margin-top: 5%;">
-                <div class="col-md-3 gambar">
+                <div class="col-md-3 gambar" style="margin: 0 auto;">
                     <img src="<?= base_url('assets/img/dinas/kwu.png') ?>">
                 </div>                
-                <div class="col-md-9">
+                <div class="col-md-8">
                 <h1><strong>KWU</strong></h1>
                     <p>
                         Dinas Kewirausahaan merupakan dinas intrnal dalam BEM KM Fasilkom yang mempunyai fungsi sebagai media bagi civitas akademika fasilkom unsri dalam mengembangankan kemampuan berwirausaha. dinas kewirausahaan juga menjadi ujung tombak bem km fasilkom dalam mencari pendanaan secara mandiri. dinas keuwirausahaan memiliki tantangan yang dihadapi berupa dunia bisnis dimana kgiatan kewirausahaan dapat berhubungan dengan kegiatan kemahasiswaan atau tidak sama skali. dalam kegiatannya, diberikan kebebasan dalam pengaturan konsep dan eksekusi kegiatan yang tetap berada dalam jalur yang ada dan berlaku. diharapkan pengembangan diri soft skill, hard skill dan pengalaman dalam dinas kewirausahaan akan menghasilkan kader yang ideal terutama dalam bidang entrepreneurship.
@@ -373,7 +373,7 @@
     <section id="akademik" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
-                <div class="col-md-9">
+                <div class="col-md-8">
                 <h1><strong>Akademik</strong></h1>
                     <p>
                         Dinas Akademik merupakan salah satu dinas yang ada di dalam kepengurusan Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas  Sriwijaya periode 2017 yang berfokus pada kegiatan-kegiatan yang bersifat akademik untuk memudahkan pemberian informasi akademik dan menjamin kesejahteraan bagi mahasiswa Fakultas Ilmu Komputer Universitas  Sriwijaya.<br>
@@ -395,11 +395,11 @@
     <!-- Kastrad Section -->
     <section id="Kastrad" class="container content-section text-center"  >
         <div class="row box2">
-            <div style="margin-top: 5%;">
+            <div style="margin-top: 5%; margin-bottom: 5%;">
                 <div class="col-md-3 gambar">
                    <img src="<?= base_url('assets/img/dinas/kastrad.png') ?>">
                 </div>                
-                <div class="col-md-9">
+                <div class="col-md-8">
                 <h1><strong>Kajian Strategis dan Advokasi</strong></h1>
                     <p>
                        Dinas Kajian Strategis dan advokasi (Kastrad) adalah pusat kajian isu strategis dan advokasi kampus . Kastrad memiliki 2 divisi sekaligus 2 fungsi yaitu:
@@ -422,16 +422,13 @@
     <section id="Polstrad" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
-                <div class="col-md-9">
+                <div class="col-md-8 col-md-offset-2">
                 <h1><strong>Politik dan Strategi</strong></h1>
                     <p>
-                        Dinas polstrad meruskan sebuah dinas yg erperan sbagai motor pergerakan dalam pergerakan mahasiswa fasilkom unsri.<br>Divisi ini berorientasi pda kajian yg kreatif dalam membumikan isu, serta responsif dalam gerakan dan tindakan nyata sebaga bentuk kontribusi serta penyikapan terhadap isu politik yg terjadi dalam tigkat universitas , nasional, maupun international.
+                        Dinas polstrad meruskan sebuah dinas yang berperan sebagai motor pergerakan dalam pergerakan mahasiswa Fasilkom Unsri.<br>Divisi ini berorientasi pada kajian yang kreatif dalam membumikan isu, serta responsif dalam gerakan dan tindakan nyata sebaga bentuk kontribusi serta penyikapan terhadap isu politik yang terjadi dalam tigkat universitas , nasional, maupun international.
 
                     </p>
                 </div>
-                <div class="col-md-3 gambar">
-                    
-                </div>                
             </div>
         </div>
     </section>
@@ -439,11 +436,8 @@
     <!-- Adkam Section -->
     <section id="Adkam" class="container content-section text-center"  >
         <div class="row box2">
-            <div style="margin-top: 5%;">
-                <div class="col-md-3 gambar">
-                    
-                </div>                
-                <div class="col-md-9">
+            <div style="margin-top: 5%;">      
+                <div class="col-md-8 col-md-offset-2">
                 <h1><strong>Advokasi Kampus</strong></h1>
                     <p>
                        Advokasi kampus adalah media utama penghubung antara mahasiswa dengan pihak kampus, melalui advokasi mahasiswa bisa memberikan aspirasi-aspirasi mereka tentang kampus baik sarana prasarana maupun akademik. Yang tentunya akan di kaji dan di cari tahu solusinya dengan cara rasional logis dan tegas.
@@ -475,11 +469,8 @@
     <!-- Humas Section -->
     <section id="Humas" class="container content-section text-center"  >
         <div class="row box2">
-            <div style="margin-top: 5%;">
-                <div class="col-md-3 gambar">
-                   
-                </div>                
-                <div class="col-md-9">
+            <div style="margin-top: 5%;">                
+                <div class="col-md-8 col-md-offset-2">
                 <h1><strong>Hubungan Masyarakat</strong></h1>
                     <p>
                         Divisi Hubungan Masyarakat :
@@ -497,7 +488,7 @@
     <section id="Mulmed" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
-                <div class="col-md-7">
+                <div class="col-md-8 col-md-offset-2">
                 <h1><strong>Multimedia</strong></h1>
                     <p>
                          Divisi multimedia :
@@ -506,10 +497,7 @@
                             <li>Mendukung Divisi Humas dalam mengolah informasi dengan tampilan yang menarik</li>
                         </ol>
                     </p>
-                </div>
-                <div class="col-md-3 gambar">
-                  
-                </div>                
+                </div>             
             </div>
         </div>
     </section>
