@@ -28,8 +28,7 @@
 		border: 1px solid black;
 		margin: 0 auto;
 		text-align: center;
-		padding: 100px;
-		margin-top: 10px; margin-bottom: 15px;
+		margin-bottom: 15px;
 	}
 </style>
 
@@ -41,12 +40,14 @@
 	</div>
 	<div class="body">
 		<div id="foto">
-			3x4<br>
-			FOTO <br>
-			CLOSE UP
+			<div style="margin-top: 50px; font-family: verdana;">
+				3x4<br>
+				FOTO <br>
+				CLOSE UP
+			</div>
 		</div>
 		<div>
-			<span style="font-size: 126px;"><strong>
+			<span style="font-size: 100px;"><strong>
 				<?php if($data->id_data > 0 && $data->id_data <= 9): ?>
 					<?= '00'.$data->id_data ?>
 				<?php elseif($data->id_data > 9 && $data->id_data <= 99): ?>
