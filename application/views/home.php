@@ -430,7 +430,7 @@
                     </p>
                 </div>
                 <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/dinas/kastrad.png') ?>">
+                    
                 </div>                
             </div>
         </div>
@@ -441,7 +441,7 @@
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/dinas/kastrad.png') ?>">
+                    
                 </div>                
                 <div class="col-md-9">
                 <h1><strong>Advokasi Kampus</strong></h1>
@@ -477,7 +477,7 @@
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/dinas/medinfo.png') ?>">
+                   
                 </div>                
                 <div class="col-md-9">
                 <h1><strong>Hubungan Masyarakat</strong></h1>
@@ -508,7 +508,7 @@
                     </p>
                 </div>
                 <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/dinas/medinfo.png') ?>">
+                  
                 </div>                
             </div>
         </div>
