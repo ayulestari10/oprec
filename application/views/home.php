@@ -46,7 +46,7 @@
             list-style: none;
             margin-bottom: 3%;
         }
-        ul li a{color: white;}
+        ul li a{color: black;}
         .box{
             min-width: 300px; min-height: 400px;
             border: 10px double #FD7F04;
@@ -223,10 +223,8 @@
         }
     </style>
 
-    <section class="content-section text-center">
-        <div class="row" id="inti">
-            <img src="<?= base_url('assets/img/dinas/inti.png') ?>">
-        </div>
+    <section class="content-section text-center" id="inti">
+        <img src="<?= base_url('assets/img/dinas/inti.png') ?>">
     </section>
 
     <!-- About Section -->

@@ -213,7 +213,7 @@
 			 		</select>
 			 	</div>
 			 	<div class="form-group">
-			 		<label for="IPK">IPK <span style="color: #C6C2C2">Contoh 3,74</span></label>
+			 		<label for="IPK">IPK <span style="color: #C6C2C2">  Contoh 3.74</span></label>
 			 		 <input type="number" max="4" min="2" name="ipk" id="ipk" placeholder="IPK" class="form-control" value="<?= $dt->ipk ?>" required>
 			 	</div>
 			 	<div class="form-group">
