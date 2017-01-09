@@ -119,7 +119,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="dropdown">
-                        <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#about"><i class="fa fa-smile-o"></i> 
+                        <a id="dLabel" role="button" data-toggle="dropdown" data-target="#"><i class="fa fa-smile-o"></i> 
                             Tentang <span class="caret"></span>
                         </a>
                         <!-- <a tabindex="-1" class="page-scroll" href="#about">About</a> -->
@@ -212,6 +212,13 @@
             width: 100%; height: 100%;
         }
         #inti{
+            background: url(<?= base_url('assets/img/header.png') ?>) no-repeat bottom center scroll;
+            background-size: contain;
+            height: 800px;
+            -moz-background-size: 1400px 1100px;
+            background-size: 1400px 1100px;
+        }
+        #inti img{
             width: 100%; height: 500px;
         }
     </style>
