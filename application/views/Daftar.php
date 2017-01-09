@@ -214,7 +214,7 @@
 			 	</div>
 			 	<div class="form-group">
 			 		<label for="IPK">IPK <span style="color: #C6C2C2">Contoh 3,74</span></label>
-			 		 <input type="number" max="4" min="2" name="ipk" placeholder="IPK" class="form-control" value="<?= $dt->ipk ?>" required>
+			 		 <input type="number" max="4" min="2" name="ipk" id="ipk" placeholder="IPK" class="form-control" value="<?= $dt->ipk ?>" required>
 			 	</div>
 			 	<div class="form-group">
 			 		<label for="Tempat Lahir">Tempat Lahir</label>
@@ -363,6 +363,12 @@
 
 <script type="text/javascript">
 	var dinas1;
+	function cek_ipk(){
+		var ipk = ("#ipk").val();
+		if(ipk > 4){
+			console.log('<div class="alert alert-danger">IPK yang anda inputkan tidak boleh lebih dari 4! Isi kembali IPK yang sesuai!</div>');
+		}
+	}
 
 	function validAngka(a)
     {

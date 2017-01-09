@@ -270,7 +270,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 gambar">
-                    <img src="<?= base_url('assets/img/kestari.jpg') ?>">
+                    <img src="<?= base_url('assets/img/dinas/kestari.png') ?>">
                 </div>                
             </div>
         </div>
@@ -281,7 +281,7 @@
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-6 gambar">
-                    <!-- <img src="<?= base_url('assets/img/coba.png') ?>"> -->
+                    <img src="<?= base_url('assets/img/dinas/psdm.png') ?>">
                 </div>                
                 <div class="col-md-6">
                 <h1><strong>PSDM</strong></h1>
@@ -304,7 +304,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 gambar">
-                  <!--   <img src="<?= base_url('assets/img/coba.png') ?>"> -->
+                  <img src="<?= base_url('assets/img/dinas/pti.png') ?>">
                 </div>                
             </div>
         </div>
@@ -315,7 +315,7 @@
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-4 gambar">
-                    <!-- <img src="<?= base_url('assets/img/coba.png') ?>"> -->
+                    <img src="<?= base_url('assets/img/dinas/sosmas.png') ?>">
                 </div>                
                 <div class="col-md-8">
                 <h1><strong>Sosmas</strong></h1>
@@ -345,7 +345,7 @@
                     </p>
                 </div>
                 <div class="col-md-6 gambar">
-                    <img src="<?= base_url('assets/img/senbut.jpg') ?>">
+                    <img src="<?= base_url('assets/img/dinas/senor.png') ?>">
                 </div>                
             </div>
         </div>
@@ -356,7 +356,7 @@
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/kwu.jpg') ?>">
+                    <img src="<?= base_url('assets/img/dinas/kwu.png') ?>">
                 </div>                
                 <div class="col-md-9">
                 <h1><strong>KWU</strong></h1>
@@ -386,7 +386,7 @@
                     </p>
                 </div>
                 <div class="col-md-3 gambar">
-                    <!-- <img src="<?= base_url('assets/img/coba.png') ?>"> -->
+                   <img src="<?= base_url('assets/img/dinas/kastrad.png') ?>">
                 </div>                
             </div>
         </div>
@@ -397,7 +397,7 @@
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-3 gambar">
-                   <!--  <img src="<?= base_url('assets/img/coba.png') ?>"> -->
+                   <img src="<?= base_url('assets/img/dinas/kastrad.png') ?>">
                 </div>                
                 <div class="col-md-9">
                 <h1><strong>Kajian Strategis dan Advokasi</strong></h1>
@@ -430,7 +430,7 @@
                     </p>
                 </div>
                 <div class="col-md-3 gambar">
-                    <!-- <img src="<?= base_url('assets/img/coba.png') ?>"> -->
+                    <img src="<?= base_url('assets/img/dinas/kastrad.png') ?>">
                 </div>                
             </div>
         </div>
@@ -441,7 +441,7 @@
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-3 gambar">
-                    <!-- <img src="<?= base_url('assets/img/coba.png') ?>"> -->
+                    <img src="<?= base_url('assets/img/dinas/kastrad.png') ?>">
                 </div>                
                 <div class="col-md-9">
                 <h1><strong>Advokasi Kampus</strong></h1>
@@ -466,7 +466,7 @@
                     </p>
                 </div>
                 <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/medinfo.jpg') ?>">
+                    <img src="<?= base_url('assets/img/dinas/medinfo.png') ?>">
                 </div>                
             </div>
         </div>
@@ -477,7 +477,7 @@
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/medinfo.jpg') ?>">
+                    <img src="<?= base_url('assets/img/dinas/medinfo.png') ?>">
                 </div>                
                 <div class="col-md-9">
                 <h1><strong>Hubungan Masyarakat</strong></h1>
@@ -508,7 +508,7 @@
                     </p>
                 </div>
                 <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/medinfo.jpg') ?>">
+                    <img src="<?= base_url('assets/img/dinas/medinfo.png') ?>">
                 </div>                
             </div>
         </div>
