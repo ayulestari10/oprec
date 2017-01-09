@@ -211,9 +211,12 @@
         .logoo img{
             width: 100%; height: 100%;
         }
+        #inti{
+            width: 100%; height: 500px;
+        }
     </style>
 
-    <section class="container content-section text-center">
+    <section class="content-section text-center">
         <div class="row" id="inti">
             <img src="<?= base_url('assets/img/dinas/inti.png') ?>">
         </div>
@@ -236,9 +239,9 @@
         </div>
         <div class="row">
             <div class="col-lg-4 col-lg-offset-2">
-                <ul style="color: black;">
-                    <li><a class="page-scroll" href="#Kesekretariatan">Kestari</a></li>
-                    <li><a class="page-scroll" href="#PSDM">PSDM</a></li>
+                <ul>
+                    <li style="color: black;"><a class="page-scroll" href="#Kesekretariatan">Kestari</a></li>
+                    <li style="color: black;"><a class="page-scroll" href="#PSDM">PSDM</a></li>
                     <li><a class="page-scroll" href="#PTI">PTI</a></li>
                     <li><a class="page-scroll" href="#Sosmas">Sosmas</a></li>
                     <li><a class="page-scroll" href="#Senbut">Seni dan Olahraga</a></li>
@@ -247,7 +250,7 @@
                 </ul>
             </div>
             <div class="col-lg-4">
-                <ul style="color: black;">
+                <ul>
                     <li><a class="page-scroll" href="#Kastrad">Kajian Strategi dan Advokasi</a></li>
                     <li><a class="page-scroll" href="#Polstrad">Politik Kajian Strategi</a></li>
                     <li><a class="page-scroll" href="#Adkam">Advokasi Kampus</a></li>
