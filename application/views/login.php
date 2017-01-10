@@ -1,3 +1,9 @@
+<style type="text/css">
+    #log{
+        margin-bottom: 10%;
+    }
+</style>
+
 <div class="container">
 	<div class="row">
 	    <div class="col-xs-5 col-xs-offset-4 col-md-5 col-md-offset-4" id="log">
