@@ -5,7 +5,7 @@
             <form action="<?= base_url('index.php/login/peserta') ?>" method="post">
                 <div class="form-group">
                     <!-- <label for="NIM">Nomor Induk Mahasiswa / NIM</label> -->
-                    <input type="text" name="nim" class="form-control" placeholder="Nomor Induk Mahasiswa">
+                    <input type="text" name="nim" class="form-control" placeholder="Nomor Induk Mahasiswa" onkeyup="validAngka(this)">
                 </div>
                 <div class="form-group">
                     <!-- <label for="password">Password</label> -->
@@ -18,21 +18,11 @@
 	</div> <!-- /.row -->
 </div> <!-- /.container -->
 <script type="text/javascript">
-    function showPassword() {
-        
-        var key_attr = $('#key').attr('type');
-        
-        if(key_attr != 'text') {
-            
-            $('.checkbox').addClass('show');
-            $('#key').attr('type', 'text');
-            
-        } else {
-            
-            $('.checkbox').removeClass('show');
-            $('#key').attr('type', 'password');
-            
+    function validAngka(a)
+    {
+        if(!/^[0-9.]+$/.test(a.value))
+        {
+        a.value = a.value.substring(0,a.value.length-1000);
         }
-        
     }
 </script>
