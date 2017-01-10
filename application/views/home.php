@@ -530,7 +530,7 @@
                     </div>
             
                         <!-- <div class="panel-body">
-                            <form role="form" action="<?= base_url('index.php/regist/proses') ?>" method="POST">
+                            <form role="form" action="<?= base_url('regist/proses') ?>" method="POST">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-12">
                                         <div class="form-group">
