@@ -41,9 +41,8 @@
 	<div class="body">
 		<div id="foto">
 			<div style="margin-top: 50px; font-family: verdana;">
-				3x4<br>
-				FOTO <br>
-				CLOSE UP
+				Pas<br>
+				Photo<br>
 			</div>
 		</div>
 		<div>
