@@ -3,7 +3,7 @@
 	    <div class="col-xs-5 col-xs-offset-4 col-md-5 col-md-offset-4" id="log">
             <div style="font-size: 400%; color: #424242; text-align: center; margin-bottom: 5%;">
                 <h1>LOGIN</h1>
-            </divstyle="font-size:>
+            </div>
             <form action="<?= base_url('login/peserta') ?>" method="post">
                 <div class="form-group">
                     <!-- <label for="NIM">Nomor Induk Mahasiswa / NIM</label> -->
