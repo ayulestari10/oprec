@@ -18,9 +18,18 @@
 		font-family: verdana;
 	}
 	.body{text-align: center;}
-	.satu img{
+	/*.satu img{
 		width: 355px;
 		height: 90px;
+	}*/
+	.logo{
+		width: 50px;
+		height: 50px;
+	}
+	#title{
+		margin: 0 auto;
+		width: 250px; height: 60px;
+		margin-left: 60px;
 	}
 	#foto{
 		height: 152px;
@@ -34,8 +43,14 @@
 
 <div id="cover">
 	<div class="header">
-		<div class="satu">
-			<img src="<?= base_url("assets/img/logo3.png") ?>">
+		<div class="logo" style="margin-left: 5px;">
+			<img src="<?= base_url("assets/img/unsri.png") ?>">
+		</div>
+		<div id="title">
+			<span style="font-size: 15px;"><strong>OPEN RECRUITMENT<br>BEM KM FASILKOM UNSRI 2017</strong></span>
+		</div>
+		<div class="logo" style="margin-left: 310px;">
+			<img src="<?= base_url("assets/img/bem.png") ?>">
 		</div>
 	</div>
 	<div class="body">
@@ -61,7 +76,6 @@
 		<span><?= $data->angkatan ?></span><br>
 		<p style="font-size: 14px; font-family: verdana;">Dinas 1 : <?= $data->dinas1 ?><br>
 		Dinas 2 : <?= $data->dinas2 ?></p>
-		<span style="font-size: 15px;"><strong>OPEN RECRUITMENT<br>BEM KM FASILKOM UNSRI 2017</strong></span>
 	</div>
 </div>
 
