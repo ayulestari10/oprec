@@ -1,7 +1,7 @@
 <div class="container">
 	<div class="row">
-	    <div class="col-xs-8 col-xs-offset-2 col-md-8 col-md-offset-2" id="log">
-            <h1 style="font-size: 400%; color: #424242" >LOGIN</h1>
+	    <div class="col-xs-6 col-xs-offset-4 col-md-6 col-md-offset-4" id="log">
+            <h1 style="font-size: 400%; color: #424242; text-align: center;" >LOGIN</h1>
             <form action="<?= base_url('index.php/login/peserta') ?>" method="post">
                 <div class="form-group">
                     <!-- <label for="NIM">Nomor Induk Mahasiswa / NIM</label> -->
