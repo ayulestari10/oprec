@@ -93,7 +93,15 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
+    <style type="text/css">
+        .logo_utama{
+            width:50px; height: 50px; float: left;
+            padding: 1%;
+          }
+          .logo_utama img{
+            width:50px; height: 50px;
+          }
+    </style>
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container" style="color: black;">
@@ -101,6 +109,11 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Menu <i class="fa fa-bars"></i>
                 </button>
+                <a href="<?= base_url('') ?>">
+                    <div class="logo_utama">
+                      <img src="<?= base_url('assets/img/bem.png') ?>">
+                    </div>
+                  </a>
                 <a class="navbar-brand page-scroll" href="http://bem.ilkom.unsri.ac.id">
                     <span class="light">BEM KM FASILKOM</span>
                 </a>
