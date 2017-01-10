@@ -30,6 +30,7 @@
 		margin: 0 auto;
 		width: 250px; height: 60px;
 		margin-left: 60px;
+		margin-top: -50px;
 	}
 	#foto{
 		height: 152px;
@@ -49,7 +50,7 @@
 		<div id="title">
 			<span style="font-size: 15px;"><strong>OPEN RECRUITMENT<br>BEM KM FASILKOM UNSRI 2017</strong></span>
 		</div>
-		<div class="logo" style="margin-left: 310px;">
+		<div class="logo" style="margin-left: 310px; margin-top: -60px;">
 			<img src="<?= base_url("assets/img/bem.png") ?>">
 		</div>
 	</div>
