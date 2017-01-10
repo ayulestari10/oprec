@@ -267,15 +267,15 @@
     <section id="Kesekretariatan" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%; margin-bottom: 5%;">
+                <div class="col-md-6 gambar">
+                    <img src="<?= base_url('assets/img/dinas/kestari.png') ?>">
+                </div> 
                 <div class="col-md-6">
                 <h1><strong>Kestari</strong></h1>
                     <p>
                         Dinas kesekretariatan merupakan dinas yang mengurus surat menyurat serta mengurus urusan rumah tangga BEM KM Fasilkom Unsri.
                     </p>
-                </div>
-                <div class="col-md-6 gambar">
-                    <img src="<?= base_url('assets/img/dinas/kestari.png') ?>">
-                </div>                
+                </div>               
             </div>
         </div>
     </section>
@@ -301,14 +301,14 @@
     <section id="PTI" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%; margin-bottom: 5%;">
+                <div class="col-md-6 gambar">
+                  <img src="<?= base_url('assets/img/dinas/pti.png') ?>">
+                </div>
                 <div class="col-md-6">
                 <h1><strong>PTI</strong></h1>
                     <p>
                         Dinas Pengembangan Teknologi Informasi adalah dinas yang mengutamakan pengembangan teknologi tepat guna untuk BEM KM Fasilkom yang lebih maju.
                     </p>
-                </div>
-                <div class="col-md-6 gambar">
-                  <img src="<?= base_url('assets/img/dinas/pti.png') ?>">
                 </div>                
             </div>
         </div>
@@ -342,15 +342,15 @@
     <section id="Senbut" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%; margin-bottom: 5%;">
+                <div class="col-md-6 gambar">
+                    <img src="<?= base_url('assets/img/dinas/senor.png') ?>">
+                </div>  
                 <div class="col-md-6">
                 <h1><strong>Seni dan Olahraga</strong></h1>
                     <p>
                         Seni dan Olahraga merupakan dinas yang berperan sebagai wadah minat dan bakat bagi para mahasiswa khususnya di bidang seni dan olahraga. Kemudian juga memiliki tugas utk membentuk suatu kegiatan yang berpacu pada inovasi / kreatifitas yang di dasari pada bidang seni dan olahraga.
                     </p>
-                </div>
-                <div class="col-md-6 gambar">
-                    <img src="<?= base_url('assets/img/dinas/senor.png') ?>">
-                </div>                
+                </div>              
             </div>
         </div>
     </section>
@@ -377,6 +377,9 @@
     <section id="akademik" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
+                <div class="col-md-3 gambar" style="margin: 0 auto;">
+                   <img src="<?= base_url('assets/img/dinas/akademik.png') ?>">
+                </div> 
                 <div class="col-md-8">
                 <h1><strong>Akademik</strong></h1>
                     <p>
@@ -388,10 +391,7 @@
                             <li>mampu untuk mengupayakan pendidikan dan tata kelola organisasi kepada mahasiswa pada umumnya dan organisatoris/lembaga kemahasiswaan pada khususnya</li>
                         </ol>
                     </p>
-                </div>
-                <div class="col-md-3 gambar" style="margin: 0 auto;">
-                   <img src="<?= base_url('assets/img/dinas/akademik.png') ?>">
-                </div>                
+                </div>               
             </div>
         </div>
     </section>
@@ -455,6 +455,9 @@
     <section id="Medinfo" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
+                <div class="col-md-3 gambar" style="margin: 0 auto;">
+                    <img src="<?= base_url('assets/img/dinas/medinfo.png') ?>">
+                </div> 
                 <div class="col-md-7">
                 <h1><strong>Media dan Informasi</strong></h1>
                     <p>
@@ -462,10 +465,7 @@
 
                         Struktural Dinas Media dan Informasi terbagi menjadi dua divisi, yaitu Divisi Hubungan Masyarakat dan Divisi Multimedia.<br>
                     </p>
-                </div>
-                <div class="col-md-3 gambar" style="margin: 0 auto;">
-                    <img src="<?= base_url('assets/img/dinas/medinfo.png') ?>">
-                </div>                
+                </div>               
             </div>
         </div>
     </section>
