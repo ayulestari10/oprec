@@ -29,11 +29,6 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-       <a href="<?= base_url('') ?>">
-        <div class="logo_utama">
-          <img src="<?= base_url('assets/img/logo.jpg') ?>">
-        </div>
-      </a>
       <a class="navbar-brand" href="<?= base_url('') ?>">OPREC BEM KM FASILKOM</a>
     </div>
 

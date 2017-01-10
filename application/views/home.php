@@ -101,11 +101,6 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                 <a href="<?= base_url('') ?>">
-                    <div class="logo_utama">
-                      <img src="<?= base_url('assets/img/logo.jpg') ?>">
-                    </div>
-                  </a>
                 <a class="navbar-brand page-scroll" href="http://bem.ilkom.unsri.ac.id">
                     <span class="light">BEM KM FASILKOM</span>
                 </a>
@@ -190,7 +185,7 @@
                 <div class="row">
                     <div class="col-md-8 col-sm-8 col-md-offset-2">
                         <div class="coun">
-                            <div id="cd" class="cd" data-date="2017-01-10 00:00:00"></div>
+                            <div id="cd" class="cd" data-date="2017-01-10 24:00:00"></div>
                             <script type="text/javascript">
                                 $(".cd").TimeCircles();
                             </script>
@@ -557,7 +552,7 @@
                             </form> 
                         </div> -->
                         <div class="coun">
-                            <div id="cd" class="cd" data-date="2017-01-10 00:00:00"></div>
+                            <div id="cd" class="cd" data-date="2017-01-10 24:00:00"></div>
                             <script type="text/javascript">
                                 $(".cd").TimeCircles();
                             </script>
