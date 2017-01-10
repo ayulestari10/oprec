@@ -4,7 +4,7 @@
             <div style="font-size: 400%; color: #424242; text-align: center; margin-bottom: 5%;">
                 <h1>LOGIN</h1>
             </divstyle="font-size:>
-            <form action="<?= base_url('index.php/login/peserta') ?>" method="post">
+            <form action="<?= base_url('login/peserta') ?>" method="post">
                 <div class="form-group">
                     <!-- <label for="NIM">Nomor Induk Mahasiswa / NIM</label> -->
                     <input type="text" name="nim" class="form-control" placeholder="Nomor Induk Mahasiswa" onkeyup="validAngka(this)">

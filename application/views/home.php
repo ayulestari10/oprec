@@ -147,9 +147,9 @@
                     <li>
                         <a class="page-scroll" href="#daftar"><i class="fa fa-user"></i> Daftar</a>
                     </li>
-                      <li><a href="<?= base_url('index.php/login') ?>"><i class="fa fa-sign-in"></i> Login</a></li>
+                      <li><a href="<?= base_url('login') ?>"><i class="fa fa-sign-in"></i> Login</a></li>
                     <?php else: ?>
-                      <li><a href="<?= base_url('index.php/peserta') ?>"><i class="fa fa-book"></i> Formulir</a></li>
+                      <li><a href="<?= base_url('peserta') ?>"><i class="fa fa-book"></i> Formulir</a></li>
                     <?php endif; ?>
                 </ul>
             </div>
