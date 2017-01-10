@@ -168,7 +168,7 @@
 
     <style type="text/css">
         #coming img{
-            width: 100%; height: 630px;
+            width: 100%; height: 640px;
             /*margin-bottom: -2%;*/
         }
     </style>
