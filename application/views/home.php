@@ -380,7 +380,7 @@
                 <div class="col-md-3 gambar" style="margin: 0 auto;">
                    <img src="<?= base_url('assets/img/dinas/akademik.png') ?>">
                 </div> 
-                <div class="col-md-7">
+                <div class="col-md-7 col-md-offset-1">
                 <h1><strong>Akademik</strong></h1>
                     <p>
                         Dinas Akademik merupakan salah satu dinas yang ada di dalam kepengurusan Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas  Sriwijaya periode 2017 yang berfokus pada kegiatan-kegiatan yang bersifat akademik untuk memudahkan pemberian informasi akademik dan menjamin kesejahteraan bagi mahasiswa Fakultas Ilmu Komputer Universitas  Sriwijaya.<br>
@@ -458,7 +458,7 @@
                 <div class="col-md-3 gambar" style="margin: 0 auto;">
                     <img src="<?= base_url('assets/img/dinas/medinfo.png') ?>">
                 </div> 
-                <div class="col-md-6">
+                <div class="col-md-6 col-md-offset-1">
                 <h1><strong>Media dan Informasi</strong></h1>
                     <p>
                         Media dan Informasi (Medinfo) adalah salah satu dinas di BEM KM Fasilkom Unsri yang mana bertanggung jawab mengenai informasi dan dokumentasi. Dinas ini merupakan dinas yang mendukung BEM KM Fasilkom Unsri dalam menjalankan Visi dan Misinya dari belakang layar agar dapat terlaksana dengan baik. Komunikatif, Informatif, Kreatif dan Apresiatif merupakan hal yang diusung oleh Dinas Medinfo.<br>
