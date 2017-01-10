@@ -1,6 +1,6 @@
 <style type="text/css">
     #log{
-        margin-bottom: 10%;
+        margin-bottom: 50%;
     }
 </style>
 
