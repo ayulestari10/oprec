@@ -524,7 +524,7 @@
                         ?>
                     </div>
             
-                        <!-- <div class="panel-body">
+                        <div class="panel-body">
                             <form role="form" action="<?= base_url('regist/proses') ?>" method="POST">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-12">
@@ -550,13 +550,13 @@
                                 <input type="submit" value="Daftar" name="regist" class="btn btn-primary btn-block">
                             
                             </form> 
-                        </div> -->
-                        <div class="coun">
+                        </div>
+                        <!-- <div class="coun">
                             <div id="cd" class="cd" data-date="2017-01-10 24:00:00"></div>
                             <script type="text/javascript">
                                 $(".cd").TimeCircles();
                             </script>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
