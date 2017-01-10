@@ -98,7 +98,7 @@
 <section id="login">
     <div class="container">
     	<div class="row">
-    	    <div class="col-md-12" id="log">
+    	    <div class="col-md-8 col-md-offset-2" id="log">
         	    <div class="form-wrap">
                 <h1 style="font-size: 400%; color: #424242" >LOGIN</h1>
                     <form role="form" action="<?= base_url('index.php/login/peserta') ?>" method="post" id="login-form" autocomplete="off">
