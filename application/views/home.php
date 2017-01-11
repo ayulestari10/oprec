@@ -194,7 +194,7 @@
                     <img src="<?= base_url('assets/img/oprec.png') ?>">
                 </div>
             </div>
-            <div class="container" style="margin-top: -10%;">
+            <!-- <div class="container" style="margin-top: -10%;">
                 <div class="row">
                     <div class="col-md-8 col-sm-8 col-md-offset-2">
                         <div class="coun">
@@ -205,7 +205,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </header>
     <style type="text/css">
