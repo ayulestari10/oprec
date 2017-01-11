@@ -45,7 +45,8 @@ class Peserta extends CI_Controller{
 				'alasan1'	=> $this->input->post('alasan1'),
 				'dinas2'	=> $this->input->post('dinas2'),
 				'alasan2'	=> $this->input->post('alasan2'),
-				'id_line'	=> $this->input->post('id_line')
+				'id_line'	=> $this->input->post('id_line'),
+				'alasan_bem'=> $this->input->post('alasan_bem'),
 			);
 
 			$this->Peserta_model->update($nim, $input);
