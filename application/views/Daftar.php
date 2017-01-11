@@ -330,9 +330,28 @@
 			<div class="col-md-6 col-md-offset-1">
 				<div class="form-group">
 					<label for="Dinas/Divisi Kedua">Dinas/Divisi Kedua</label>
-		 			<select name="dinas2" class="form-control" id="DinasSatu" required>
-		 				
-			 		</select>
+			 		<?php  
+			 			$dinas2 = [
+			 				'Dinas PTI',
+			 				'Dinas Kesekretariatan',
+			 				'Dinas Pengembangan Sumber Daya Manusia',
+			 				'Dinas Sosial dan Masyarakat',
+			 				'Dinas Seni dan Olahraga',
+			 				'Dinas Kastrad',
+			 				'Divisi Politik Kajian Strategi',
+			 				'Divisi Advokasi Kampus',
+			 				'Dinas Media dan Informasi',
+			 				'Divisi Multimedia',
+			 				'Divisi Hubungan Masyarakat',
+			 				'Dinas Kewirausahaan',
+			 				'Dinas Akademik'
+			 			];
+			 			$dinas2 = array_diff($dinas2, $dt->dinas1);
+			 			$xd = [];
+			 			foreach ($dinas2 as $d)
+			 				$xd[$d] = $d;
+			 			echo form_dropdown('dinas2', $xd, $dt->dinas2, ['class' => 'form-control', 'id' => 'DinasSatu', 'required' => '']);
+			 		?>
 			 	</div>
 			 	<div class="form-group">
 			 		<label for="Alasan memilih dinas/divisi kedua">Alasan memilih dinas/divisi kedua</label>
@@ -392,205 +411,205 @@
 		$("#dinas2").animate({height:"toggle"}, 500);
 		$("#dinas2").css("display", "block");
 
-		if(dinas1 === 'Dinas Kesekretariatan'){
-			$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
-			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
-			'<option value="Dinas PTI">Dinas PTI</option>'+
-			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
-			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
-			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
-			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
-			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
-			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
-			'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
-			'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
-			'<option value="Dinas Akademik">Dinas Akademik</option>');
+		// if(dinas1 === 'Dinas Kesekretariatan'){
+		// 	$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
+		// 	'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
+		// 	'<option value="Dinas PTI">Dinas PTI</option>'+
+		// 	'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
+		// 	'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
+		// 	'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
+		// 	'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
+		// 	'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
+		// 	'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
+		// 	'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
+		// 	'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
+		// 	'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
+		// 	'<option value="Dinas Akademik">Dinas Akademik</option>');
 		
-		} else if(dinas1 === 'Dinas Pengembangan Sumber Daya Manusia'){
-			$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
-			'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
-			'<option value="Dinas PTI">Dinas PTI</option>'+
-			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
-			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
-			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
-			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
-			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
-			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
-			'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
-			'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
-			'<option value="Dinas Akademik">Dinas Akademik</option>');
-		} else if(dinas1 === 'Dinas PTI'){
-			$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
-			'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
-			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
-			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
-			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
-			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
-			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
-			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
-			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
-			'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
-			'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
-			'<option value="Dinas Akademik">Dinas Akademik</option>');
-		} else if(dinas1 === 'Dinas Sosial dan Masyarakat'){
-			$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
-			'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
-			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
-			'<option value="Dinas PTI">Dinas PTI</option>'+
-			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
-			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
-			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
-			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
-			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
-			'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
-			'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
-			'<option value="Dinas Akademik">Dinas Akademik</option>');
-		} else if(dinas1 === 'Dinas Seni dan Olahraga'){
-			$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
-			'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
-			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
-			'<option value="Dinas PTI">Dinas PTI</option>'+
-			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
-			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
-			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
-			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
-			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
-			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
-			'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
-			'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
-			'<option value="Dinas Akademik">Dinas Akademik</option>');
-		} else if(dinas1 === 'Dinas Kastrad'){
-			$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
-			'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
-			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
-			'<option value="Dinas PTI">Dinas PTI</option>'+
-			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
-			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
-			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
-			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
-			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
-			'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
-			'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
-			'<option value="Dinas Akademik">Dinas Akademik</option>');
-		} else if(dinas1 === 'Divisi Politik Kajian Strategi') {
-			$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
-			'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
-			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
-			'<option value="Dinas PTI">Dinas PTI</option>'+
-			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
-			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
-			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
-			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
-			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
-			'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
-			'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
-			'<option value="Dinas Akademik">Dinas Akademik</option>');
-		} else if(dinas1 === 'Divisi Advokasi Kampus'){ 
-			$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
-			'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
-			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
-			'<option value="Dinas PTI">Dinas PTI</option>'+
-			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
-			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
-			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
-			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
-			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
-			'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
-			'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
-			'<option value="Dinas Akademik">Dinas Akademik</option>');
-		} else if(dinas1 === 'Dinas Media dan Informasi') {
-			$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
-			'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
-			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
-			'<option value="Dinas PTI">Dinas PTI</option>'+
-			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
-			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
-			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
-			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
-			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
-			'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
-			'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
-			'<option value="Dinas Akademik">Dinas Akademik</option>');		
-		} else if(dinas1 === 'Divisi Hubungan Masyarakat') {
-			$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
-			'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
-			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
-			'<option value="Dinas PTI">Dinas PTI</option>'+
-			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
-			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
-			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
-			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
-			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
-			'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
-			'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
-			'<option value="Dinas Akademik">Dinas Akademik</option>');
-		} else if(dinas1 === 'Divisi Multimedia'){
-			$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
-			'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
-			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
-			'<option value="Dinas PTI">Dinas PTI</option>'+
-			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
-			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
-			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
-			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
-			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
-			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
-			'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
-			'<option value="Dinas Akademik">Dinas Akademik</option>');
-		} else if(dinas1 === 'Dinas Kewirausahaan'){
-			$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
-			'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
-			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
-			'<option value="Dinas PTI">Dinas PTI</option>'+
-			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
-			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
-			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
-			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
-			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
-			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
-			'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
-			'<option value="Dinas Akademik">Dinas Akademik</option>');
-		} else if(dinas1 === 'Dinas Akademik'){
-			$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
-			'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
-			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
-			'<option value="Dinas PTI">Dinas PTI</option>'+
-			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
-			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
-			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
-			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
-			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
-			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
-			'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
-			'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>');
-		} else {
-			$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
-			'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
-			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
-			'<option value="Dinas PTI">Dinas PTI</option>'+
-			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
-			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
-			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
-			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
-			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
-			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
-			'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
-			'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
-			'<option value="Dinas Akademik">Dinas Akademik</option>');
-		}
+		// } else if(dinas1 === 'Dinas Pengembangan Sumber Daya Manusia'){
+		// 	$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
+		// 	'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
+		// 	'<option value="Dinas PTI">Dinas PTI</option>'+
+		// 	'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
+		// 	'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
+		// 	'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
+		// 	'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
+		// 	'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
+		// 	'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
+		// 	'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
+		// 	'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
+		// 	'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
+		// 	'<option value="Dinas Akademik">Dinas Akademik</option>');
+		// } else if(dinas1 === 'Dinas PTI'){
+		// 	$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
+		// 	'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
+		// 	'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
+		// 	'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
+		// 	'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
+		// 	'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
+		// 	'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
+		// 	'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
+		// 	'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
+		// 	'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
+		// 	'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
+		// 	'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
+		// 	'<option value="Dinas Akademik">Dinas Akademik</option>');
+		// } else if(dinas1 === 'Dinas Sosial dan Masyarakat'){
+		// 	$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
+		// 	'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
+		// 	'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
+		// 	'<option value="Dinas PTI">Dinas PTI</option>'+
+		// 	'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
+		// 	'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
+		// 	'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
+		// 	'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
+		// 	'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
+		// 	'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
+		// 	'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
+		// 	'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
+		// 	'<option value="Dinas Akademik">Dinas Akademik</option>');
+		// } else if(dinas1 === 'Dinas Seni dan Olahraga'){
+		// 	$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
+		// 	'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
+		// 	'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
+		// 	'<option value="Dinas PTI">Dinas PTI</option>'+
+		// 	'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
+		// 	'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
+		// 	'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
+		// 	'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
+		// 	'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
+		// 	'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
+		// 	'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
+		// 	'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
+		// 	'<option value="Dinas Akademik">Dinas Akademik</option>');
+		// } else if(dinas1 === 'Dinas Kastrad'){
+		// 	$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
+		// 	'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
+		// 	'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
+		// 	'<option value="Dinas PTI">Dinas PTI</option>'+
+		// 	'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
+		// 	'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
+		// 	'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
+		// 	'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
+		// 	'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
+		// 	'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
+		// 	'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
+		// 	'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
+		// 	'<option value="Dinas Akademik">Dinas Akademik</option>');
+		// } else if(dinas1 === 'Divisi Politik Kajian Strategi') {
+		// 	$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
+		// 	'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
+		// 	'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
+		// 	'<option value="Dinas PTI">Dinas PTI</option>'+
+		// 	'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
+		// 	'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
+		// 	'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
+		// 	'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
+		// 	'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
+		// 	'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
+		// 	'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
+		// 	'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
+		// 	'<option value="Dinas Akademik">Dinas Akademik</option>');
+		// } else if(dinas1 === 'Divisi Advokasi Kampus'){ 
+		// 	$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
+		// 	'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
+		// 	'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
+		// 	'<option value="Dinas PTI">Dinas PTI</option>'+
+		// 	'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
+		// 	'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
+		// 	'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
+		// 	'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
+		// 	'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
+		// 	'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
+		// 	'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
+		// 	'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
+		// 	'<option value="Dinas Akademik">Dinas Akademik</option>');
+		// } else if(dinas1 === 'Dinas Media dan Informasi') {
+		// 	$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
+		// 	'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
+		// 	'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
+		// 	'<option value="Dinas PTI">Dinas PTI</option>'+
+		// 	'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
+		// 	'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
+		// 	'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
+		// 	'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
+		// 	'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
+		// 	'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
+		// 	'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
+		// 	'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
+		// 	'<option value="Dinas Akademik">Dinas Akademik</option>');		
+		// } else if(dinas1 === 'Divisi Hubungan Masyarakat') {
+		// 	$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
+		// 	'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
+		// 	'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
+		// 	'<option value="Dinas PTI">Dinas PTI</option>'+
+		// 	'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
+		// 	'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
+		// 	'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
+		// 	'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
+		// 	'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
+		// 	'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
+		// 	'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
+		// 	'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
+		// 	'<option value="Dinas Akademik">Dinas Akademik</option>');
+		// } else if(dinas1 === 'Divisi Multimedia'){
+		// 	$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
+		// 	'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
+		// 	'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
+		// 	'<option value="Dinas PTI">Dinas PTI</option>'+
+		// 	'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
+		// 	'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
+		// 	'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
+		// 	'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
+		// 	'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
+		// 	'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
+		// 	'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
+		// 	'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
+		// 	'<option value="Dinas Akademik">Dinas Akademik</option>');
+		// } else if(dinas1 === 'Dinas Kewirausahaan'){
+		// 	$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
+		// 	'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
+		// 	'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
+		// 	'<option value="Dinas PTI">Dinas PTI</option>'+
+		// 	'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
+		// 	'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
+		// 	'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
+		// 	'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
+		// 	'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
+		// 	'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
+		// 	'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
+		// 	'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
+		// 	'<option value="Dinas Akademik">Dinas Akademik</option>');
+		// } else if(dinas1 === 'Dinas Akademik'){
+		// 	$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
+		// 	'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
+		// 	'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
+		// 	'<option value="Dinas PTI">Dinas PTI</option>'+
+		// 	'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
+		// 	'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
+		// 	'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
+		// 	'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
+		// 	'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
+		// 	'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
+		// 	'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
+		// 	'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
+		// 	'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>');
+		// } else {
+		// 	$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
+		// 	'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
+		// 	'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
+		// 	'<option value="Dinas PTI">Dinas PTI</option>'+
+		// 	'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
+		// 	'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
+		// 	'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
+		// 	'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
+		// 	'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
+		// 	'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
+		// 	'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
+		// 	'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
+		// 	'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
+		// 	'<option value="Dinas Akademik">Dinas Akademik</option>');
+		// }
 	}
 	
 </script>
