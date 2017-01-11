@@ -15,7 +15,7 @@
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" type="text/css" href="<?= base_url('assets/font-awesome/css/font-awesome.css') ?>">
 
-    <link rel="shortcut icon" href="<?= base_url('assets/img/logo.jpg') ?>">
+    <link rel="shortcut icon" href="<?= base_url('assets/img/bem.png') ?>">
 
     <script type="text/javascript" src="<?= base_url('assets/jquery/jquery.js') ?>"></script>
     <script type="text/javascript" src="<?= base_url('assets/bootstrap/js/bootstrap.min.js') ?>"></script>
@@ -24,7 +24,8 @@
 
     <style type="text/css">
         body{
-            background-color: #2fa4e7;
+            background-color: white;
+            color: black !important; 
         }
         #cd {
             color: black;
@@ -45,19 +46,19 @@
             list-style: none;
             margin-bottom: 3%;
         }
-        ul li a{color: white;}
+        ul li a{color: black;}
         .box{
-            min-width: 300px; min-height: 300px;
-            border: 10px double white;
+            min-width: 300px; min-height: 400px;
+            border: 10px double #FD7F04;
             margin-top: -8%;
         }
         .box2{
-            min-width: 300px; min-height: 300px;
-            border: 10px groove white;
+            min-width: 300px; min-height: 400px;
+            border: 10px groove #FD7F04;
             margin-top: -8%;
         }
         .gambar img{
-            width: 200px; height: 200px;
+            width: 300px; height: 320px;
         }
         .centered-form{
             margin-top: 60px;
@@ -92,7 +93,15 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
+    <style type="text/css">
+        .logo_utama{
+            width:50px; height: 50px; float: left;
+            padding: 1%;
+          }
+          .logo_utama img{
+            width:50px; height: 50px;
+          }
+    </style>
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container" style="color: black;">
@@ -100,9 +109,9 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     Menu <i class="fa fa-bars"></i>
                 </button>
-                 <a href="<?= base_url('') ?>">
+                <a href="<?= base_url('') ?>">
                     <div class="logo_utama">
-                      <img src="<?= base_url('assets/img/logo.jpg') ?>">
+                      <img src="<?= base_url('assets/img/bem.png') ?>">
                     </div>
                   </a>
                 <a class="navbar-brand page-scroll" href="http://bem.ilkom.unsri.ac.id">
@@ -118,7 +127,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="dropdown">
-                        <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="#about"><i class="fa fa-smile-o"></i> 
+                        <a id="dLabel" role="button" data-toggle="dropdown" data-target="#"><i class="fa fa-smile-o"></i> 
                             Tentang <span class="caret"></span>
                         </a>
                         <!-- <a tabindex="-1" class="page-scroll" href="#about">About</a> -->
@@ -146,9 +155,9 @@
                     <li>
                         <a class="page-scroll" href="#daftar"><i class="fa fa-user"></i> Daftar</a>
                     </li>
-                      <li><a href="<?= base_url('index.php/login') ?>"><i class="fa fa-sign-in"></i> Login</a></li>
+                      <li><a href="<?= base_url('login') ?>"><i class="fa fa-sign-in"></i> Login</a></li>
                     <?php else: ?>
-                      <li><a href="<?= base_url('index.php/peserta') ?>"><i class="fa fa-book"></i> Formulir</a></li>
+                      <li><a href="<?= base_url('peserta') ?>"><i class="fa fa-book"></i> Formulir</a></li>
                     <?php endif; ?>
                 </ul>
             </div>
@@ -159,7 +168,7 @@
 
     <style type="text/css">
         #coming img{
-            width: 100%; height: 630px;
+            width: 100%; height: 680px;
             /*margin-bottom: -2%;*/
         }
     </style>
@@ -182,55 +191,71 @@
             </div> -->
             <div class="row" id="coming">
                 <div class="col-md-8 col-sm-8 col-lg-offset-2">
-                    <img src="<?= base_url('assets/img/com.png') ?>">
+                    <img src="<?= base_url('assets/img/oprec.png') ?>">
                 </div>
             </div>
-            <div class="container" style="margin-top: -10%;">
+            <!-- <div class="container" style="margin-top: -10%;">
                 <div class="row">
                     <div class="col-md-8 col-sm-8 col-md-offset-2">
                         <div class="coun">
-                            <div id="cd" class="cd" data-date="2017-01-08 00:00:00"></div>
+                            <div id="cd" class="cd" data-date="2017-01-10 24:00:00"></div>
                             <script type="text/javascript">
                                 $(".cd").TimeCircles();
                             </script>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-8 col-sm-8 col-lg-offset-2">
-                        <a href="#about" class="btn btn-circle page-scroll" style="color: black;">
-                            <i class="fa fa-angle-double-down animated" style="color: black;"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+            </div> -->
         </div>
     </header>
     <style type="text/css">
         .logoo img{
             width: 100%; height: 100%;
         }
+        #inti{
+            margin-top: -20%;
+            background: url(<?= base_url('assets/img/header.png') ?>) no-repeat bottom center scroll;
+            background-size: contain;
+            height: 1000px;
+            -moz-background-size: 1400px 1000px;
+            background-size: 1400px 1000px;
+        }
+        #inti img{
+            width: 100%; height: 900px;
+        }
     </style>
+
+    <section class="content-section text-center" id="inti">
+        <img src="<?= base_url('assets/img/dinas/inti.png') ?>">
+        <div class="row">
+            <div class="col-md-8 col-sm-8 col-lg-offset-2">
+                <a href="#about" class="btn btn-circle page-scroll" style="color: black;">
+                    <i class="fa fa-angle-double-down animated" style="color: black;"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
-    <section id="about" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="about" class="container content-section text-center" style="color: black;">
         <div class="row"  style="text-align: center; margin-bottom: 5%; margin-top: -15%;">
-            <div class="col-md-3 logoo">
+            <div class="col-md-2 logoo">
                 <img src="<?= base_url('assets/img/Unsri.png') ?>">
             </div>
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <div style="font-size: 40px;">
-                    <h1>Dinas dan Divisi <br><br>BEM KM Fasilkom</h1>
+                    <h1>Dinas dan Divisi <br>BEM KM Fasilkom <br> Universitas Sriwijaya</h1>
                 </div>
             </div>
-            <div class="col-sm-3 logoo">
+            <div class="col-sm-2 logoo">
                 <img src="<?= base_url('assets/img/bem.png') ?>">
             </div>
         </div>
-        <div class="row">
+        <div class="row" style="color: black !important;">
             <div class="col-lg-4 col-lg-offset-2">
                 <ul>
-                    <li><a class="page-scroll" href="#Kesekretariatan">Kestari</a></li>
-                    <li><a class="page-scroll" href="#PSDM">PSDM</a></li>
+                    <li style="color: black;"><a class="page-scroll" href="#Kesekretariatan">Kestari</a></li>
+                    <li style="color: black;"><a class="page-scroll" href="#PSDM">PSDM</a></li>
                     <li><a class="page-scroll" href="#PTI">PTI</a></li>
                     <li><a class="page-scroll" href="#Sosmas">Sosmas</a></li>
                     <li><a class="page-scroll" href="#Senbut">Seni dan Olahraga</a></li>
@@ -252,28 +277,28 @@
     </section>
 
     <!-- Kestari Section -->
-    <section id="Kesekretariatan" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Kesekretariatan" class="container content-section text-center"  >
         <div class="row box">
-            <div style="margin-top: 5%;">
+            <div style="margin-top: 5%; margin-bottom: 5%;">
+                <div class="col-md-6 gambar">
+                    <img src="<?= base_url('assets/img/dinas/kestari.png') ?>">
+                </div> 
                 <div class="col-md-6">
                 <h1><strong>Kestari</strong></h1>
                     <p>
                         Dinas kesekretariatan merupakan dinas yang mengurus surat menyurat serta mengurus urusan rumah tangga BEM KM Fasilkom Unsri.
                     </p>
-                </div>
-                <div class="col-md-6 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
-                </div>                
+                </div>               
             </div>
         </div>
     </section>
 
     <!-- PSDM  Section -->
-    <section id="PSDM" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="PSDM" class="container content-section text-center"  >
         <div class="row box2">
             <div style="margin-top: 5%;">
                 <div class="col-md-6 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
+                    <img src="<?= base_url('assets/img/dinas/psdm.png') ?>">
                 </div>                
                 <div class="col-md-6">
                 <h1><strong>PSDM</strong></h1>
@@ -286,28 +311,28 @@
     </section>
 
     <!-- PTI Section -->
-    <section id="PTI" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="PTI" class="container content-section text-center"  >
         <div class="row box">
-            <div style="margin-top: 5%;">
+            <div style="margin-top: 5%; margin-bottom: 5%;">
+                <div class="col-md-6 gambar">
+                  <img src="<?= base_url('assets/img/dinas/pti.png') ?>">
+                </div>
                 <div class="col-md-6">
                 <h1><strong>PTI</strong></h1>
                     <p>
                         Dinas Pengembangan Teknologi Informasi adalah dinas yang mengutamakan pengembangan teknologi tepat guna untuk BEM KM Fasilkom yang lebih maju.
                     </p>
-                </div>
-                <div class="col-md-6 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
                 </div>                
             </div>
         </div>
     </section>
 
     <!-- Sosmas  Section -->
-    <section id="Sosmas" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Sosmas" class="container content-section text-center"  >
         <div class="row box2">
             <div style="margin-top: 5%;">
-                <div class="col-md-4 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
+                <div class="col-md-4 gambar" style="margin: 0 auto;">
+                    <img src="<?= base_url('assets/img/dinas/sosmas.png') ?>">
                 </div>                
                 <div class="col-md-8">
                 <h1><strong>Sosmas</strong></h1>
@@ -327,30 +352,30 @@
     </section>
 
     <!-- Senbut Section -->
-    <section id="Senbut" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Senbut" class="container content-section text-center"  >
         <div class="row box">
-            <div style="margin-top: 5%;">
+            <div style="margin-top: 5%; margin-bottom: 5%;">
+                <div class="col-md-6 gambar">
+                    <img src="<?= base_url('assets/img/dinas/senor.png') ?>">
+                </div>  
                 <div class="col-md-6">
                 <h1><strong>Seni dan Olahraga</strong></h1>
                     <p>
                         Seni dan Olahraga merupakan dinas yang berperan sebagai wadah minat dan bakat bagi para mahasiswa khususnya di bidang seni dan olahraga. Kemudian juga memiliki tugas utk membentuk suatu kegiatan yang berpacu pada inovasi / kreatifitas yang di dasari pada bidang seni dan olahraga.
                     </p>
-                </div>
-                <div class="col-md-6 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
-                </div>                
+                </div>              
             </div>
         </div>
     </section>
 
     <!-- KWU Section -->
-    <section id="kwu" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="kwu" class="container content-section text-center"  >
         <div class="row box2">
-            <div style="margin-top: 5%;">
-                <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
+            <div style="margin-top: 5%; min-height: 450px;">
+                <div class="col-md-4 gambar" style="margin: 0 auto;">
+                    <img src="<?= base_url('assets/img/dinas/kwu.png') ?>">
                 </div>                
-                <div class="col-md-9">
+                <div class="col-md-8">
                 <h1><strong>KWU</strong></h1>
                     <p>
                         Dinas Kewirausahaan merupakan dinas intrnal dalam BEM KM Fasilkom yang mempunyai fungsi sebagai media bagi civitas akademika fasilkom unsri dalam mengembangankan kemampuan berwirausaha. dinas kewirausahaan juga menjadi ujung tombak bem km fasilkom dalam mencari pendanaan secara mandiri. dinas keuwirausahaan memiliki tantangan yang dihadapi berupa dunia bisnis dimana kgiatan kewirausahaan dapat berhubungan dengan kegiatan kemahasiswaan atau tidak sama skali. dalam kegiatannya, diberikan kebebasan dalam pengaturan konsep dan eksekusi kegiatan yang tetap berada dalam jalur yang ada dan berlaku. diharapkan pengembangan diri soft skill, hard skill dan pengalaman dalam dinas kewirausahaan akan menghasilkan kader yang ideal terutama dalam bidang entrepreneurship.
@@ -361,11 +386,14 @@
         </div>
     </section>
 
-    <!-- Akademik Section -->
-    <section id="akademik" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <!-- Akademik Section -->  
+    <section id="akademik" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
-                <div class="col-md-9">
+                <div class="col-md-3 gambar" style="margin: 0 auto;">
+                   <img src="<?= base_url('assets/img/dinas/akademik.png') ?>">
+                </div> 
+                <div class="col-md-7 col-md-offset-1">
                 <h1><strong>Akademik</strong></h1>
                     <p>
                         Dinas Akademik merupakan salah satu dinas yang ada di dalam kepengurusan Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer Universitas  Sriwijaya periode 2017 yang berfokus pada kegiatan-kegiatan yang bersifat akademik untuk memudahkan pemberian informasi akademik dan menjamin kesejahteraan bagi mahasiswa Fakultas Ilmu Komputer Universitas  Sriwijaya.<br>
@@ -376,22 +404,19 @@
                             <li>mampu untuk mengupayakan pendidikan dan tata kelola organisasi kepada mahasiswa pada umumnya dan organisatoris/lembaga kemahasiswaan pada khususnya</li>
                         </ol>
                     </p>
-                </div>
-                <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
-                </div>                
+                </div>               
             </div>
         </div>
     </section>
 
     <!-- Kastrad Section -->
-    <section id="Kastrad" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Kastrad" class="container content-section text-center"  >
         <div class="row box2">
-            <div style="margin-top: 5%;">
-                <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
+            <div style="margin-top: 5%; margin-bottom: 5%;">
+                <div class="col-md-4 gambar" style="margin: 0 auto;">
+                   <img src="<?= base_url('assets/img/dinas/kastrad.png') ?>">
                 </div>                
-                <div class="col-md-9">
+                <div class="col-md-8">
                 <h1><strong>Kajian Strategis dan Advokasi</strong></h1>
                     <p>
                        Dinas Kajian Strategis dan advokasi (Kastrad) adalah pusat kajian isu strategis dan advokasi kampus . Kastrad memiliki 2 divisi sekaligus 2 fungsi yaitu:
@@ -411,31 +436,25 @@
     </section>
 
     <!-- Polstrad Section -->
-    <section id="Polstrad" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Polstrad" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
-                <div class="col-md-9">
+                <div class="col-md-8 col-md-offset-2">
                 <h1><strong>Politik dan Strategi</strong></h1>
                     <p>
-                        Dinas polstrad meruskan sebuah dinas yg erperan sbagai motor pergerakan dalam pergerakan mahasiswa fasilkom unsri.<br>Divisi ini berorientasi pda kajian yg kreatif dalam membumikan isu, serta responsif dalam gerakan dan tindakan nyata sebaga bentuk kontribusi serta penyikapan terhadap isu politik yg terjadi dalam tigkat universitas , nasional, maupun international.
+                        Dinas polstrad meruskan sebuah dinas yang berperan sebagai motor pergerakan dalam pergerakan mahasiswa Fasilkom Unsri.<br>Divisi ini berorientasi pada kajian yang kreatif dalam membumikan isu, serta responsif dalam gerakan dan tindakan nyata sebaga bentuk kontribusi serta penyikapan terhadap isu politik yang terjadi dalam tigkat universitas , nasional, maupun international.
 
                     </p>
                 </div>
-                <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
-                </div>                
             </div>
         </div>
     </section>
 
     <!-- Adkam Section -->
-    <section id="Adkam" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Adkam" class="container content-section text-center"  >
         <div class="row box2">
-            <div style="margin-top: 5%;">
-                <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
-                </div>                
-                <div class="col-md-9">
+            <div style="margin-top: 5%;">      
+                <div class="col-md-8 col-md-offset-2">
                 <h1><strong>Advokasi Kampus</strong></h1>
                     <p>
                        Advokasi kampus adalah media utama penghubung antara mahasiswa dengan pihak kampus, melalui advokasi mahasiswa bisa memberikan aspirasi-aspirasi mereka tentang kampus baik sarana prasarana maupun akademik. Yang tentunya akan di kaji dan di cari tahu solusinya dengan cara rasional logis dan tegas.
@@ -446,36 +465,33 @@
     </section>
 
     <!-- Medinfo Section -->
-    <section id="Medinfo" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Medinfo" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
-                <div class="col-md-9">
+                <div class="col-md-3 gambar" style="margin: 0 auto;">
+                    <img src="<?= base_url('assets/img/dinas/medinfo.png') ?>">
+                </div> 
+                <div class="col-md-6 col-md-offset-1">
                 <h1><strong>Media dan Informasi</strong></h1>
                     <p>
                         Media dan Informasi (Medinfo) adalah salah satu dinas di BEM KM Fasilkom Unsri yang mana bertanggung jawab mengenai informasi dan dokumentasi. Dinas ini merupakan dinas yang mendukung BEM KM Fasilkom Unsri dalam menjalankan Visi dan Misinya dari belakang layar agar dapat terlaksana dengan baik. Komunikatif, Informatif, Kreatif dan Apresiatif merupakan hal yang diusung oleh Dinas Medinfo.<br>
 
                         Struktural Dinas Media dan Informasi terbagi menjadi dua divisi, yaitu Divisi Hubungan Masyarakat dan Divisi Multimedia.<br>
                     </p>
-                </div>
-                <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
-                </div>                
+                </div>               
             </div>
         </div>
     </section>
 
     <!-- Humas Section -->
-    <section id="Humas" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Humas" class="container content-section text-center"  >
         <div class="row box2">
-            <div style="margin-top: 5%;">
-                <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
-                </div>                
-                <div class="col-md-9">
+            <div style="margin-top: 5%;">                
+                <div class="col-md-8 col-md-offset-2">
                 <h1><strong>Hubungan Masyarakat</strong></h1>
                     <p>
                         Divisi Hubungan Masyarakat :
-                        <ol style="text-align: left; font-size: 16px;">
+                        <ol style="text-align: left; font-size: 18px;">
                             <li>Bertanggung jawab dalam informasi yang ada di Fakultas maupun diluar Fakultas agar dapat sampai ke Civitas Akademika Fasilkom Unsri</li>
                             <li>Membangun komunikasi antara BEM dan Civitas Akademika Fakultas maupun luar Fakultas</li>
                         </ol>
@@ -486,10 +502,10 @@
     </section>
 
     <!-- Mulmed Section -->
-    <section id="Mulmed" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="Mulmed" class="container content-section text-center"  >
         <div class="row box">
             <div style="margin-top: 5%;">
-                <div class="col-md-9">
+                <div class="col-md-8 col-md-offset-2">
                 <h1><strong>Multimedia</strong></h1>
                     <p>
                          Divisi multimedia :
@@ -498,15 +514,12 @@
                             <li>Mendukung Divisi Humas dalam mengolah informasi dengan tampilan yang menarik</li>
                         </ol>
                     </p>
-                </div>
-                <div class="col-md-3 gambar">
-                    <img src="<?= base_url('assets/img/coba.png') ?>">
-                </div>                
+                </div>             
             </div>
         </div>
     </section>
 
-    <section id="daftar" class="container content-section text-center" style="background-color: #2fa4e7;">
+    <section id="daftar" class="container content-section text-center"  >
         <div class="container">
             <div class="row centered-form">
             <div class="col-md-8 col-md-offset-2" style="height: 800px; margin-top: -10%;" >
@@ -525,7 +538,7 @@
                     </div>
             
                         <div class="panel-body">
-                            <form role="form" action="<?= base_url('index.php/regist/proses') ?>" method="POST">
+                            <form role="form" action="<?= base_url('regist/proses') ?>" method="POST">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-12">
                                         <div class="form-group">
@@ -551,12 +564,12 @@
                             
                             </form> 
                         </div>
-                        <div class="coun">
-                            <div id="cd" class="cd" data-date="2017-01-08 00:00:00"></div>
+                        <!-- <div class="coun">
+                            <div id="cd" class="cd" data-date="2017-01-10 24:00:00"></div>
                             <script type="text/javascript">
                                 $(".cd").TimeCircles();
                             </script>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>

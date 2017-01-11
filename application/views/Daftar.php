@@ -213,6 +213,10 @@
 			 		</select>
 			 	</div>
 			 	<div class="form-group">
+			 		<label for="IPK">IPK <span style="color: #C6C2C2">  Contoh 3.74</span></label>
+			 		 <input type="number" max="4" min="2" step="0.01" name="ipk" id="ipk" placeholder="IPK" class="form-control" value="<?= $dt->ipk ?>" required>
+			 	</div>
+			 	<div class="form-group">
 			 		<label for="Tempat Lahir">Tempat Lahir</label>
 			 		 <input type="text" name="tempat" placeholder="Tempat Lahir" class="form-control" value="<?= $dt->tempat ?>" required>
 			 	</div>
@@ -222,7 +226,11 @@
 			 	</div>
 			 	<div class="form-group">
 			 		<label for="Nomor HP">Nomor HP</label>
-			 		 <input type="text" name="no_hp" placeholder="Nomor HP" class="form-control" value="<?= $dt->no_hp ?>" required>
+			 		 <input type="text" name="no_hp" placeholder="Nomor HP" class="form-control" value="<?= $dt->no_hp ?>" onkeyup="validAngka(this)" required>
+			 	</div>
+			 	<div class="form-group">
+			 		<label for="ID Line">ID Line</label>
+			 		 <input type="text" name="id_line" placeholder="ID Line" class="form-control" value="<?= $dt->id_line ?>" required>
 			 	</div>
 			 	<div class="form-group">
 			 		<label for="Alamat">Alamat</label>
@@ -234,15 +242,15 @@
 
 			 <div class="col-md-4 col-md-offset-1">
 			 	<div class="panel panel-primary">
-				  <div class="panel-heading">
+				  <div class="panel-heading">	
 				    <h3 class="panel-title">Info</h3>
 				  </div>
 				  <div class="panel-body">
 				    Ketika Wawancara Open Recruitment BEM KM Fasilkom 2017. Peserta wajib membawa persyaratan berikut.<br>
 				    <ul>
-				    	<li>Uang akomodasi sebesar 20k untuk fasilitas makan siang, snack pagi dan sore.</li>
-				    	<li>Foto Close Up ukuran 4R.</li>
-				    	<li>Menggunakan ID CARD.</li>
+				    	<li>Membawa uang akomodasi sebesar Rp. 20.000 untuk fasilitas makan siang dan snack pada saat workshop.</li>
+				    	<li>Membawa foto diri close up ukuran 3r (1lembar).</li>
+				    	<li>Menggunakan Kartu peserta yang telah di download dari web pendaftaran.</li>
 				    </ul>
 				  </div>
 				</div>
@@ -267,7 +275,7 @@
 				 			<option value="Dinas PTI">Dinas PTI</option>
 				 			<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>
 				 			<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>
-				 			<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>
+				 			<option value="Dinas Kastrad">Dinas Kastrad</option>
 				 			<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>
 				 			<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>
 				 			<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>
@@ -282,7 +290,7 @@
 				 			<option value="Dinas PTI">Dinas PTI</option>
 				 			<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>
 				 			<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>
-				 			<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>
+				 			<option value="Dinas Kastrad">Dinas Kastrad</option>
 				 			<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>
 				 			<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>
 				 			<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>
@@ -307,9 +315,9 @@
 				  <div class="panel-body">
 				    Ketika Wawancara Open Recruitment BEM KM Fasilkom 2017. Peserta wajib membawa persyaratan berikut.<br>
 				    <ul>
-				    	<li>Uang akomodasi sebesar 20k untuk fasilitas makan siang, snack pagi dan sore.</li>
-				    	<li>Foto Close Up ukuran 4R.</li>
-				    	<li>Menggunakan ID CARD.</li>
+				    	<li>Membawa uang akomodasi sebesar Rp. 20.000 untuk fasilitas makan siang dan snack pada saat workshop.</li>
+				    	<li>Membawa foto diri close up ukuran 3r (1lembar).</li>
+				    	<li>Menggunakan Kartu peserta yang telah di download dari web pendaftaran.</li>
 				    </ul>
 				  </div>
 				</div>
@@ -340,9 +348,9 @@
 				  <div class="panel-body">
 				    Ketika Wawancara Open Recruitment BEM KM Fasilkom 2017. Peserta wajib membawa persyaratan berikut.<br>
 				    <ul>
-				    	<li>Uang akomodasi sebesar 20k untuk fasilitas makan siang, snack pagi dan sore.</li>
-				    	<li>Foto Close Up ukuran 4R.</li>
-				    	<li>Menggunakan ID CARD.</li>
+				    	<li>Membawa uang akomodasi sebesar Rp. 20.000 untuk fasilitas makan siang dan snack pada saat workshop.</li>
+				    	<li>Membawa foto diri close up ukuran 3r (1lembar).</li>
+				    	<li>Menggunakan Kartu peserta yang telah di download dari web pendaftaran.</li>
 				    </ul>
 				  </div>
 				</div>
@@ -355,6 +363,20 @@
 
 <script type="text/javascript">
 	var dinas1;
+	function cek_ipk(){
+		var ipk = ("#ipk").val();
+		if(ipk > 4){
+			console.log('<div class="alert alert-danger">IPK yang anda inputkan tidak boleh lebih dari 4! Isi kembali IPK yang sesuai!</div>');
+		}
+	}
+
+	function validAngka(a)
+    {
+        if(!/^[0-9.]+$/.test(a.value))
+        {
+        a.value = a.value.substring(0,a.value.length-1000);
+        }
+    }
 
 	function lanjut(){
 		$("#biodata").css("display", "none");
@@ -376,7 +398,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -391,7 +413,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -405,7 +427,7 @@
 			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -419,7 +441,7 @@
 			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -433,7 +455,7 @@
 			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -441,7 +463,7 @@
 			'<option value="Divisi Multimedia">Divisi Multimedia</option>'+
 			'<option value="Dinas Kewirausahaan">Dinas Kewirausahaan</option>'+
 			'<option value="Dinas Akademik">Dinas Akademik</option>');
-		} else if(dinas1 === 'Dinas Kajian Strategi dan Advokasi'){
+		} else if(dinas1 === 'Dinas Kastrad'){
 			$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
 			'<option value="Dinas Kesekretariatan">Dinas Kesekretariatan</option>'+
 			'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
@@ -476,7 +498,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
 			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
@@ -490,7 +512,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Divisi Hubungan Masyarakat">Divisi Hubungan Masyarakat</option>'+
@@ -504,7 +526,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -518,7 +540,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -532,7 +554,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -546,7 +568,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+
@@ -560,7 +582,7 @@
 			'<option value="Dinas PTI">Dinas PTI</option>'+
 			'<option value="Dinas Sosial dan Masyarakat">Dinas Sosial dan Masyarakat</option>'+
 			'<option value="Dinas Seni dan Olahraga">Dinas Seni dan Olahraga</option>'+
-			'<option value="Dinas Kajian Strategi dan Advokasi">Dinas Kajian Strategi dan Advokasi</option>'+
+			'<option value="Dinas Kastrad">Dinas Kastrad</option>'+
 			'<option value="Divisi Politik Kajian Strategi">Divisi Politik Kajian Strategi</option>'+
 			'<option value="Divisi Advokasi Kampus">Divisi Advokasi Kampus</option>'+
 			'<option value="Dinas Media dan Informasi">Dinas Media dan Informasi</option>'+

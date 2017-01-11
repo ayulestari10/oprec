@@ -22,11 +22,21 @@ class Peserta extends CI_Controller{
 
 	function daftar(){
 		$nim = $this->session->userdata('nim');
+
+		$ipk = $this->input->post('ipk');
+
+		if($ipk > 4){
+			$this->session->set_flashdata('msg', '<div class="alert alert-danger">IPK yang anda inputkan tidak boleh lebih dari 4! Isi kembali IPK yang sesuai!</div>');
+			redirect('Peserta');
+			exit;
+		}
+
 		if($this->input->post('simpan')){
 			$input = array(
 				'nama'		=> $this->input->post('nama'),
 				'jurusan'	=> $this->input->post('jurusan'),
 				'angkatan'	=> $this->input->post('angkatan'),
+				'ipk'		=> $this->input->post('ipk'),
 				'alamat'	=> $this->input->post('alamat'),
 				'tempat'	=> $this->input->post('tempat'),
 				'ttl'		=> $this->input->post('ttl'),
@@ -34,7 +44,9 @@ class Peserta extends CI_Controller{
 				'dinas1'	=> $this->input->post('dinas1'),
 				'alasan1'	=> $this->input->post('alasan1'),
 				'dinas2'	=> $this->input->post('dinas2'),
-				'alasan2'	=> $this->input->post('alasan2')
+				'alasan2'	=> $this->input->post('alasan2'),
+				'id_line'	=> $this->input->post('id_line'),
+				'alasan_bem'=> $this->input->post('alasan_bem'),
 			);
 
 			$this->Peserta_model->update($nim, $input);
