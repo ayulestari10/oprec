@@ -350,7 +350,7 @@
 			 			$xd = [];
 			 			foreach ($dinas2 as $d)
 			 				$xd[$d] = $d;
-			 			echo form_dropdown('dinas2', $xd, $dt->dinas2, ['class' => 'form-control', 'id' => 'DinasSatu', 'required' => '']);
+			 			echo form_dropdown('dinas2', $xd, $dt->dinas2, ['class' => 'form-control', 'id' => 'dinas_satu', 'required' => '']);
 			 		?>
 			 	</div>
 			 	<div class="form-group">
