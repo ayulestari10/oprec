@@ -346,7 +346,7 @@
 			 				'Dinas Kewirausahaan',
 			 				'Dinas Akademik'
 			 			];
-			 			$dinas2 = array_diff($dinas2, $dt->dinas1);
+			 			$dinas2 = array_diff($dinas2, [$dt->dinas1]);
 			 			$xd = [];
 			 			foreach ($dinas2 as $d)
 			 				$xd[$d] = $d;
