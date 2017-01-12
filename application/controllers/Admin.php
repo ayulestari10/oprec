@@ -3,7 +3,7 @@
 class Admin extends CI_Controller{
 	function __construct(){
 		parent::__construct();
-		
+
 		$nim 	= $this->session->userdata('nim');
 		$role 	= $this->session->userdata('role');
 		
@@ -25,7 +25,7 @@ class Admin extends CI_Controller{
 		$this->load->view('frames/templates', $data);
 	}
 
-	function admin(){
+	function detail_peserta(){
 		$nim = $this->uri->segment(3);
 		
 		$data = array(
