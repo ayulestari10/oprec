@@ -3,7 +3,7 @@
 class Super_admin extends CI_Controller{
 	function __construct(){
 		parent::__construct();
-
+		
 		$nim 	= $this->session->userdata('nim');
 		$role 	= $this->session->userdata('role');
 		
@@ -17,12 +17,11 @@ class Super_admin extends CI_Controller{
 	}
 
 	function index(){
-		echo $this->session->userdata('role').', '.$nim 	= $this->session->userdata('nim'); ;
-		// $data = array(
-		// 	'title'		=> 'Daftar Semua Peserta',
-		// 	'content'	=> 'list_peserta',
-		// 	'data'		=> $this->Peserta_model->get_all() 
-		// );
+		$data = array(
+			'title'		=> 'Daftar Semua Peserta',
+			'content'	=> 'list_peserta',
+			'data'		=> $this->Peserta_model->get_dataBy_nim($this->session->userdata('nim')) 
+		);
 	}
 
 	function hapus(){
