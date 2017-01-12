@@ -2,6 +2,8 @@
 
 class Admin extends CI_Controller{
 	function __construct(){
+		parent::__construct();
+		
 		$nim 	= $this->session->userdata('nim');
 		$role 	= $this->session->userdata('role');
 		
