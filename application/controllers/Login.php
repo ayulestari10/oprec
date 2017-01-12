@@ -26,10 +26,24 @@ class Login extends CI_Controller{
 
 			if(isset($nim)AND isset($password)){
 				$data = $this->Login_model->cek_login($data);
-				if($data == 1){			
-					$this->session->set_userdata('nim', $nim);
-					redirect('Peserta');
-					exit;
+				if($data == 1){	
+					$role = $this->Peserta_model->get_role($nim);		
+					if($role == 'mhs'){
+						$this->session->set_userdata('nim', $nim);
+						$this->session->set_userdata('role', $role);
+						redirect('Peserta');
+						exit;
+					} elseif($role == 'admin') {
+						$this->session->set_userdata('nim', $nim);
+						$this->session->set_userdata('role', $role);
+						redirect('Admin');
+						exit;
+					} elseif($role == 'super admin'){
+						$this->session->set_userdata('nim', $nim);
+						$this->session->set_userdata('role', $role);
+						redirect('super_admin');
+						exit;
+					}
 				} else {
 					$this->session->set_flashdata('msg', '<div class="alert alert-danger" style="text-align:center;">Akun anda tidak benar!</div>');
 					redirect('Login/peserta');

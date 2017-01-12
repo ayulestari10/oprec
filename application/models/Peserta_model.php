@@ -61,6 +61,15 @@ class Peserta_model extends CI_Model{
 	function delete($id_mhs){
 		return $this->db->delete($this->table, array($this->key => $id_mhs));
 	}
+
+	function get_role($nim){
+		$this->db->where('nim', $nim);
+		$query = $this->db->get($this->table);
+		foreach($query->result() as $row){
+			$role = $row->role;
+		}
+		return $role;
+	}
 }
 
 ?>

@@ -82,6 +82,10 @@ class Peserta extends CI_Controller{
 		$this->load->view('frames/templates', $data);
 	}
 
+	function id_card(){
+		
+	}
+
 	function cetak_ID(){
 		$nim = $this->session->userdata('nim');
 

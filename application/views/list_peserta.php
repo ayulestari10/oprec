@@ -1,6 +1,15 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-11">
+			<h2 style="text-align: center;">List Peserta</h2>
+			<div style="margin-bottom: 5%; margin-top: 3%;">
+				<?php  
+					$msg = $this->session->userdata('msg'); 
+					if(isset($msg)){
+						echo $msg;
+					}
+				?>
+			</div>
 			<table class="table table-striped">
 				<thead>
 					<th>No</th>
@@ -18,7 +27,15 @@
 						<td></td>
 						<td><?= $row->nim ?></td>
 						<td><?= $row->nama ?></td>
-						<td><a href="<?= base_url('Peserta/detail/'.$row->id_data) ?>"><i class="fa fa-info"> Detail</i></a></td>
+						<td>
+							<a href="<?= base_url('admin/detail/'.$row->id_data) ?>"><i class="fa fa-info"> Detail</i></a>
+							<?php  
+								$role = $this->session->userdata('role');
+								if($role == 'super_admin'):
+							?>
+								<a href="<?= base_url('super_admin/hapus/'.$row->id_data) ?>"><i class="fa fa-trash"> Hapus</i></a>
+							<?php endif; ?>
+						</td>
 					</tr>
 			<?php endforeach; ?>
 				</tbody>
