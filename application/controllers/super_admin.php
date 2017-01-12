@@ -3,7 +3,6 @@
 class Super_admin extends CI_Controller{
 	function __construct(){
 		parent::__construct();
-		
 		$nim 	= $this->session->userdata('nim');
 		$role 	= $this->session->userdata('role');
 		
@@ -20,8 +19,9 @@ class Super_admin extends CI_Controller{
 		$data = array(
 			'title'		=> 'Daftar Semua Peserta',
 			'content'	=> 'list_peserta',
-			'data'		=> $this->Peserta_model->get_dataBy_nim($this->session->userdata('nim')) 
+			'data'		=> $this->Peserta_model->get_all() 
 		);
+		$this->load->view('frames/templates', $data);
 	}
 
 	function hapus(){
