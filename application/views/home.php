@@ -151,20 +151,18 @@
                     <?php 
                         $nim = $this->session->userdata('nim');
                         $role = $this->session->userdata('role');
-                        if(!isset($nim, $role)): 
-                            if($role == 'mhs'):
+                        if(isset($nim, $role)): 
                     ?>
-                    <li>
-                        <a class="page-scroll" href="#daftar"><i class="fa fa-user"></i> Daftar</a>
-                    </li>
-                      <li><a href="<?= base_url('login') ?>"><i class="fa fa-sign-in"></i> Login</a></li>
-                    <?php elseif($role == 'super admin'): ?>
+                    <?php if($role == 'super admin'): ?>
                         <li><a href="<?= base_url('super_admin') ?>"><i class="fa fa-home"></i> Dasbor</a></li>
                     <?php elseif($role == 'admin'): ?>
                         <li><a href="<?= base_url('admin') ?>"><i class="fa fa-home"></i> Dasbor</a></li>
+                    <?php elseif($role == 'mhs'): ?>
+                        <li><a href="<?= base_url('peserta') ?>"><i class="fa fa-book"></i> Formulir</a></li>
+                    <?php endif; ?>
                     <?php else: ?>
-                      <li><a href="<?= base_url('peserta') ?>"><i class="fa fa-book"></i> Formulir</a></li>
-                        <?php endif; ?>
+                        <li><a class="page-scroll" href="#daftar"><i class="fa fa-user"></i> Daftar</a></li>
+                        <li><a href="<?= base_url('login') ?>"><i class="fa fa-sign-in"></i> Login</a></li>
                     <?php endif; ?>
                 </ul>
             </div>
