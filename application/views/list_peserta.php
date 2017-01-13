@@ -16,6 +16,8 @@
 					<th>Foto</th>
 					<th>NIM</th>
 					<th>Nama</th>
+					<th>Dinas 1</th>
+					<th>Dinas 2</th>
 					<th>Aksi</th>
 				</thead>
 				<tbody>
@@ -27,6 +29,8 @@
 						<td><img src="https://akademik.unsri.ac.id/images/foto_mhs/<?= $row->angkatan ?>/<?= $row->nim ?>.jpg" width="100" height="150" alt="foto"></td>
 						<td><?= $row->nim ?></td>
 						<td><?= $row->nama ?></td>
+						<td><?= $row->dinas1 ?></td>
+						<td><?= $row->dinas2 ?></td>
 						<td>
 							<?php  
 								$role = $this->session->userdata('role');
