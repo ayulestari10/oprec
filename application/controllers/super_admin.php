@@ -29,11 +29,11 @@ class Super_admin extends CI_Controller{
 
 		if(isset($id)){
 			$this->Peserta_model->delete($id);
-			$this->session->set_flashdata('msg', '<div class="alert alert-success">Data berhasil dihapus!</div>');
+			$this->session->set_flashdata('msg', '<div class="alert alert-success" style="text-align: center;">Data berhasil dihapus!</div>');
 			redirect('super_admin');
 			exit;
 		} else {
-			$this->session->set_flashdata('msg', '<div class="alert alert-danger">Data tidak berhasil dihapus!</div>');
+			$this->session->set_flashdata('msg', '<div class="alert alert-danger"  style="text-align: center;">Data tidak berhasil dihapus!</div>');
 			redirect('super_admin');
 			exit;
 		}

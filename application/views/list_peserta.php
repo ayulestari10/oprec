@@ -24,7 +24,7 @@
 				foreach($data as $row): ?>
 					<tr>
 						<td><?= $i++ ?></td>
-						<td></td>
+						<td><img src="https://akademik.unsri.ac.id/images/foto_mhs/<?= $row->angkatan ?>/<?= $row->nim ?>.jpg" width="100" height="150" alt="foto"></td>
 						<td><?= $row->nim ?></td>
 						<td><?= $row->nama ?></td>
 						<td>
