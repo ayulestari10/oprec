@@ -150,12 +150,18 @@
 
                     <?php 
                         $nim = $this->session->userdata('nim');
-                        if(!isset($nim)): 
+                        $role = $this->session->userdata('role');
+                        if(!isset($nim, $role)): 
+                            if($role == 'mhs'):
                     ?>
                     <li>
                         <a class="page-scroll" href="#daftar"><i class="fa fa-user"></i> Daftar</a>
                     </li>
                       <li><a href="<?= base_url('login') ?>"><i class="fa fa-sign-in"></i> Login</a></li>
+                    <?php elseif($role == 'super admin'): ?>
+                        <li><a href="<?= base_url('super_admin') ?>"><i class="fa fa-home"></i> Dasbor</a></li>
+                    <?php elseif($role == 'admin'): ?>
+                        <li><a href="<?= base_url('admin') ?>"><i class="fa fa-home"></i> Dasbor</a></li>
                     <?php else: ?>
                       <li><a href="<?= base_url('peserta') ?>"><i class="fa fa-book"></i> Formulir</a></li>
                     <?php endif; ?>

@@ -1,5 +1,6 @@
 <?php  
   $nim = $this->session->userdata('nim');
+  $role = $this->session->userdata('role');
 ?>
 
 <style type="text/css">
@@ -37,7 +38,7 @@
         <?php if(!isset($nim)): ?>
           <li><a href="<?= base_url('regist') ?>"><i class="fa fa-user"></i> Daftar</a></li>
         <?php endif; ?>
-        <?php if(isset($nim)): ?>
+        <?php if(isset($nim) && $role == 'mhs'): ?>
           <li><a href="<?= base_url('peserta/cetak_ID') ?>"><i class="fa fa-download"></i> Cetak ID Card</a></li>
         <?php endif; ?>
         <?php if(!isset($nim)): ?>

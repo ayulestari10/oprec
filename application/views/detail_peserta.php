@@ -1,13 +1,15 @@
 <div class="container">
 	<div class="row">
-		<h2 style="text-align: center;">Detail Peserta</h2>
+		<div style="margin-bottom: 5%;">
+			<h2 style="text-align: center;">Detail Peserta</h2>
+		</div>
 		<div class="col-md-2">
 			<img src="https://akademik.unsri.ac.id/images/foto_mhs/<?= $dt->angkatan ?>/<?= $dt->nim ?>.jpg" width="150" height="200" alt="foto">
 		</div>
-		<div class="col-md-10">
+		<div class="col-md-8">
 			<table class="table table-striped">
 				<tr>
-					<td>NIM</td>
+					<td style="width: 200px;">NIM</td>
 					<td><?= $dt->nim ?></td>
 				</tr>
 				<tr>
