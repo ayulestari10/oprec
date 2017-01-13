@@ -40,6 +40,12 @@ class Peserta_model extends CI_Model{
 		return $query->row();
 	}
 
+	function get_dataBy_Id($id){
+		$this->db->where($this->key, $id);
+		$query = $this->db->get($this->table);
+		return $query->row();
+	}
+
 	function get_nim($nim){
 		$this->db->where($this->key, $nim);
 		$query = $this->db->get($this->table);

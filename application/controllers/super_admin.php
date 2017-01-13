@@ -25,12 +25,12 @@ class Super_admin extends CI_Controller{
 	}
 
 	function detail_peserta(){
-		$nim =  $this->uri->segment(3);
+		$id =  $this->uri->segment(3);
 		
 		$data = array(
 			'title'		=> 'Detail Peserta',
 			'content'	=> 'detail_peserta',
-			'dt'		=> $this->Peserta_model->get_dataBy_nim($nim)
+			'dt'		=> $this->Peserta_model->get_dataBy_Id($id)
 		);
 		$this->load->view('frames/templates', $data);
 	}
