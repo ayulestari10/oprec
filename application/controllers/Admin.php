@@ -26,7 +26,7 @@ class Admin extends CI_Controller{
 	}
 
 	function detail_peserta(){
-		$nim = $this->uri->segment(3);
+		$nim =  $this->uri->segment(3);
 		
 		$data = array(
 			'title'		=> 'Detail Peserta',
