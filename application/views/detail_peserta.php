@@ -2,7 +2,7 @@
 	<div class="row">
 		<h2 style="text-align: center;">Detail Peserta</h2>
 		<div class="col-md-2">
-			<img src="https://akademik.unsri.ac.id/images/foto_mhs/<?= $dt->angkatan ?>/<?= $dt->nim ?>.jpg" width="200" height="250" alt="foto">
+			<img src="https://akademik.unsri.ac.id/images/foto_mhs/<?= $dt->angkatan ?>/<?= $dt->nim ?>.jpg" width="150" height="200" alt="foto">
 		</div>
 		<div class="col-md-10">
 			<table class="table table-striped">
