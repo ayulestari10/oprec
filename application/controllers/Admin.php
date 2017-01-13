@@ -19,12 +19,10 @@ class Admin extends CI_Controller{
 	}
 
 	function index(){
-		print_r($this->data['admin']);
-		echo 'SELECT * FROM data WHERE dinas1="' . $this->data['admin']->dinas1 . '" or dinas2="' . $this->data['admin']->dinas1 . '"';
 		$data = array(
 			'title'		=> 'Daftar Peserta | Oprec BEM 2017',
 			'content'	=> 'list_peserta',
-			'data'		=> $this->db->query('SELECT * FROM data WHERE dinas1="' . $this->data['admin']->dinas1 . '" or dinas2="' . $this->data['admin']->dinas1 . '"')
+			'data'		=> $this->db->query('SELECT * FROM data WHERE dinas1="' . $this->data['admin']->dinas1 . '" or dinas2="' . $this->data['admin']->dinas1 . '"')->result()
 		);
 		$this->load->view('frames/templates', $data);
 	}
