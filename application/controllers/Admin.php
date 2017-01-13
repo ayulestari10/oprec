@@ -15,14 +15,14 @@ class Admin extends CI_Controller{
 		}
 		
 		$this->load->model('Peserta_model');
-		$this->data['admin'] = $this->db->query('SELECT * FROM peserta WHERE role="' . $role . '"')->rows();
+		$this->data['admin'] = $this->db->query('SELECT * FROM data WHERE role="' . $role . '"')->rows();
 	}
 
 	function index(){
 		$data = array(
 			'title'		=> 'Daftar Peserta | Oprec BEM 2017',
 			'content'	=> 'list_peserta',
-			'data'		=> $this->db->query('SELECT * FROM peserta WHERE dinas1="' . $this->data['admin']->dinas1 . '" or dinas2="' . $this->data['admin']->dinas1 . '"')
+			'data'		=> $this->db->query('SELECT * FROM data WHERE dinas1="' . $this->data['admin']->dinas1 . '" or dinas2="' . $this->data['admin']->dinas1 . '"')
 		);
 		$this->load->view('frames/templates', $data);
 	}
