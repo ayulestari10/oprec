@@ -15,7 +15,7 @@ class Admin extends CI_Controller{
 		}
 		
 		$this->load->model('Peserta_model');
-		$this->data['admin'] = $this->db->query('SELECT * FROM data WHERE role="' . $role . '"')->rows();
+		//$this->data['admin'] = $this->db->query('SELECT * FROM data WHERE role="' . $role . '"')->rows();
 	}
 
 	function index(){
