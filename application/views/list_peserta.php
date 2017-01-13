@@ -24,6 +24,7 @@
 			<?php
 				$i = 1; 
 				foreach($data as $row): ?>
+					<?php if ($row->role != 'admin'): ?>
 					<tr>
 						<td><?= $i++ ?></td>
 						<td><img src="https://akademik.unsri.ac.id/images/foto_mhs/<?= $row->angkatan ?>/<?= $row->nim ?>.jpg" width="100" height="150" alt="foto"></td>
@@ -43,6 +44,7 @@
 							<?php endif; ?>
 						</td>
 					</tr>
+				<?php endif; ?>
 			<?php endforeach; ?>
 				</tbody>
 				</table>
