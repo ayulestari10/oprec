@@ -164,6 +164,7 @@
                         <li><a href="<?= base_url('admin') ?>"><i class="fa fa-home"></i> Dasbor</a></li>
                     <?php else: ?>
                       <li><a href="<?= base_url('peserta') ?>"><i class="fa fa-book"></i> Formulir</a></li>
+                        <?php endif; ?>
                     <?php endif; ?>
                 </ul>
             </div>
