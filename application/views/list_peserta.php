@@ -28,12 +28,12 @@
 						<td><?= $row->nim ?></td>
 						<td><?= $row->nama ?></td>
 						<td>
-							<a href="<?= base_url('admin/detail/'.$row->id_data) ?>"><i class="fa fa-info"> Detail</i></a>
+							<a href="<?= base_url('admin/detail/'.$row->id_data) ?>" class="btn btn-info"><i class="fa fa-info"> Detail</i></a>
 							<?php  
 								$role = $this->session->userdata('role');
 								if($role == 'super_admin'):
 							?>
-								<a href="<?= base_url('super_admin/hapus/'.$row->id_data) ?>"><i class="fa fa-trash"> Hapus</i></a>
+								<a href="<?= base_url('super_admin/hapus/'.$row->id_data) ?>" class="btn btn-danger"><i class="fa fa-trash"> Hapus</i></a>
 							<?php endif; ?>
 						</td>
 					</tr>
