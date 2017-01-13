@@ -23,7 +23,6 @@
 				<tbody>
 			<?php
 				$i = 1; 
-				print_r($data);
 				foreach($data as $row): ?>
 					<tr>
 						<td><?= $i++ ?></td>
