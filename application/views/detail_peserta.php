@@ -6,7 +6,7 @@
 		<div class="col-md-2">
 			<img src="https://akademik.unsri.ac.id/images/foto_mhs/<?= $dt->angkatan ?>/<?= $dt->nim ?>.jpg" width="150" height="200" alt="foto">
 		</div>
-		<div class="col-md-8">
+		<div class="col-md-9 col-md-offset-1">
 			<table class="table table-striped">
 				<tr>
 					<td style="width: 200px;">NIM</td>
