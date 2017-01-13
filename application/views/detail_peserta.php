@@ -1,6 +1,7 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-10 col-md-offset-1">
+			<h2 style="text-align: center;">Detail Peserta</h2>
 			<table class="table table-striped">
 				<tr>
 					<td>NIM</td>
