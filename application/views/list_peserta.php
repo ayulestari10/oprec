@@ -31,7 +31,7 @@
 							<a href="<?= base_url('admin/detail_peserta/'.$row->id_data) ?>" class="btn btn-info"><i class="fa fa-info"> Detail</i></a>
 							<?php  
 								$role = $this->session->userdata('role');
-								if($role == 'super_admin'):
+								if($role == 'super admin'):
 							?>
 								<a href="<?= base_url('super_admin/hapus/'.$row->id_data) ?>" class="btn btn-danger"><i class="fa fa-trash"> Hapus</i></a>
 							<?php endif; ?>
