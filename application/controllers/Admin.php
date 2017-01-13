@@ -19,6 +19,7 @@ class Admin extends CI_Controller{
 	}
 
 	function index(){
+		print_r($this->data['admin']);
 		$data = array(
 			'title'		=> 'Daftar Peserta | Oprec BEM 2017',
 			'content'	=> 'list_peserta',
