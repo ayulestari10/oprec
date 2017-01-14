@@ -427,7 +427,7 @@
                        Dinas Kajian Strategis dan advokasi (Kastrad) adalah pusat kajian isu strategis dan advokasi kampus . Kastrad memiliki 2 divisi sekaligus 2 fungsi yaitu:
                        <ol style="text-align: left; font-size: 16px;">
                             <li>
-                                Polkrat: merumuskan kajian di fasilkom unsri isu dan melakukan studi gerakan terhadap isu-isu yang ada di kampus Unsri serta isu-isu nasional.
+                                Polkrat: merumuskan kajian isu yang ada di fasilkom unsri dan melakukan studi gerakan terhadap isu-isu yang ada di kampus Unsri bahkan sampai ke isu-isu nasional.
                             </li>
                             <li>
                                 Adkam:  betugas menjaring aspirasi mahasiswa dan memperjuangkan hak hak mahasiwa yang belum terpenuhi.    
