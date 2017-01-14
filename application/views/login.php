@@ -13,7 +13,7 @@
             <form action="<?= base_url('login/peserta') ?>" method="post">
                 <div class="form-group">
                     <!-- <label for="NIM">Nomor Induk Mahasiswa / NIM</label> -->
-                    <input type="text" name="nim" class="form-control" placeholder="Nomor Induk Mahasiswa" onkeyup="validAngka(this)">
+                    <input type="text" name="nim" class="form-control" placeholder="Nomor Induk Mahasiswa">
                 </div>
                 <div class="form-group">
                     <!-- <label for="password">Password</label> -->
