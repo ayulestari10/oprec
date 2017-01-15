@@ -401,6 +401,8 @@
 		$("#biodata").css("display", "none");
 		$("#dinas1").animate({height:"toggle"}, 500);
 		$("#dinas1").css("display", "block");
+
+		return false;
 	}
 
 	function lanjut2(){
@@ -410,7 +412,7 @@
 		$("#dinas1").css("display", "none");
 		$("#dinas2").animate({height:"toggle"}, 500);
 		$("#dinas2").css("display", "block");
-
+		return false;
 		// if(dinas1 === 'Dinas Kesekretariatan'){
 		// 	$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
 		// 	'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
