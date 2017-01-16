@@ -237,7 +237,7 @@
 			 		 <textarea name="alamat" placeholder="Alamat" class="form-control" required><?= $dt->alamat ?></textarea>
 			 	</div>
 			 
-			 	<button class="btn btn-primary" onclick="lanjut()">Lanjut</button>
+			 	<button class="btn btn-primary" onclick="lanjut(); return false;">Lanjut</button>
 			 </div>
 
 			 <div class="col-md-4 col-md-offset-1">
@@ -305,7 +305,7 @@
 			 		<label for="Alasan memilih dinas/divisi pertama">Alasan memilih dinas/divisi pertama</label>
 			 		 <textarea name="alasan1" placeholder="Alasan memilih Dinas/Divisi Pertama" class="form-control" required><?= $dt->alasan1 ?></textarea>
 			 	</div>		 	
-				<button onclick="lanjut2()" class="btn btn-primary">Lanjut</button>
+				<button onclick="lanjut2(); return false;" class="btn btn-primary">Lanjut</button>
 			</div>
 			<div class="col-md-4 col-md-offset-1">
 			 	<div class="panel panel-primary">
@@ -401,6 +401,8 @@
 		$("#biodata").css("display", "none");
 		$("#dinas1").animate({height:"toggle"}, 500);
 		$("#dinas1").css("display", "block");
+
+		return false;
 	}
 
 	function lanjut2(){
@@ -410,7 +412,7 @@
 		$("#dinas1").css("display", "none");
 		$("#dinas2").animate({height:"toggle"}, 500);
 		$("#dinas2").css("display", "block");
-
+		return false;
 		// if(dinas1 === 'Dinas Kesekretariatan'){
 		// 	$("#DinasSatu").html('<option value="">Pilih Dinas/Divisi Kedua</option>'+
 		// 	'<option value="Dinas Pengembangan Sumber Daya Manusia">Dinas Pengembangan Sumber Daya Manusia</option>'+
