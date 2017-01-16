@@ -43,6 +43,11 @@ class Login extends CI_Controller{
 						$this->session->set_userdata('role', $role);
 						redirect('super_admin');
 						exit;
+					} elseif($role == 's_admin'){
+						$this->session->set_userdata('nim', $nim);
+						$this->session->set_userdata('role', $role);
+						redirect('super_admin');
+						exit;
 					}
 				} else {
 					$this->session->set_flashdata('msg', '<div class="alert alert-danger" style="text-align:center;">Akun anda tidak benar!</div>');

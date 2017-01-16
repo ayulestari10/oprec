@@ -41,6 +41,8 @@
 							<?php elseif($role == 'super admin'): ?>
 								<a href="<?= base_url('super_admin/detail_peserta/'.$row->id_data) ?>" class="btn btn-info"><i class="fa fa-info"> Detail</i></a>
 								<a href="<?= base_url('super_admin/hapus/'.$row->id_data) ?>" class="btn btn-danger"><i class="fa fa-trash"> Hapus</i></a>
+							<?php elseif($role == 's_admin'): ?>
+								<a href="<?= base_url('super_admin/detail_peserta/'.$row->id_data) ?>" class="btn btn-info"><i class="fa fa-info"> Detail</i></a>
 							<?php endif; ?>
 						</td>
 					</tr>
