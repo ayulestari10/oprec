@@ -31,7 +31,14 @@ class Login extends CI_Controller{
 					if($role == 'mhs'){
 						$this->session->set_userdata('nim', $nim);
 						$this->session->set_userdata('role', $role);
-						$this->Peserta_model->update($this->session->userdata('nim'), 'ip' => $this->input->ip_address());
+						
+						date_default_timezone_set("Asia/Jakarta");
+
+						$data = array(
+							'waktu'		=> date("d-m-Y"),
+							'ip'		=> $this->input->ip_address() 
+						);
+						$this->Peserta_model->update($nim, $data);
 						redirect('Peserta');
 						exit;
 					} elseif($role == 'admin') {

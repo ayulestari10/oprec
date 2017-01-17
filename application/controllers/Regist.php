@@ -33,7 +33,9 @@ class Regist extends CI_Controller{
 						$input= array(
 							'nim'		=> strip_tags($this->input->post('nim')),
 							'password'	=> md5($this->input->post('password1')),
-							'role'		=> 'mhs'
+							'role'		=> 'mhs',
+							'waktu'		=> date("d-m-Y"),
+							'ip'		=> $this->input->ip_address()
 						);
 						$this->Peserta_model->insert($input);
 						$this->session->set_flashdata('msg', '<div class="alert alert-success">Anda berhasil mendaftar! Login dan lengkapi data!</div>');

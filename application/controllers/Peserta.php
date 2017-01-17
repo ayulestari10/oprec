@@ -45,10 +45,10 @@ class Peserta extends CI_Controller{
 			exit;
 		}
 
-		date_default_timezone_set("Asia/Jakarta");
 		if($this->input->post('simpan')){
 			if(isset($nama, $jurusan, $angkatan, $ipk, $alamat, $tempat, $ttl, $no_hp, $dinas1, $dinas2, $alasan1, $alasan2, $alasan_bem, $id_line)){
-					$input = array(
+				date_default_timezone_set("Asia/Jakarta");
+				$input = array(
 					'nama'		=> $nama,
 					'jurusan'	=> $jurusan,
 					'angkatan'	=> $angkatan,
