@@ -8,6 +8,7 @@ class Login extends CI_Controller{
 	}
 
 	function index(){
+		echo 'Login';
 		$data = array(
 			'title'		=> 'Login',
 			'content'	=> 'login'
