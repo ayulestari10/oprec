@@ -16,7 +16,7 @@ class Regist extends CI_Controller{
 
 			$nim_lenght = strlen($this->input->post('nim'));
 
-			if($nim_lenght != 14){
+			if($nim_lenght <= 14){
 				$this->session->set_flashdata('msg', '<div class="alert alert-danger">NIM yang anda masukkan tidak terdaftar!</div>');
 				redirect('regist#daftar');
 				exit;

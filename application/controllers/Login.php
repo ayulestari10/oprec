@@ -39,6 +39,7 @@ class Login extends CI_Controller{
 							'ip'		=> echo $this->input->ip_address() 
 						);
 						$this->Peserta_model->update($nim, $data);
+						exit;
 						redirect('Peserta');
 						exit;
 					} elseif($role == 'admin') {
