@@ -31,6 +31,7 @@ class Login extends CI_Controller{
 					if($role == 'mhs'){
 						$this->session->set_userdata('nim', $nim);
 						$this->session->set_userdata('role', $role);
+						$this->Peserta_model->update($this->session->userdata('nim'), 'ip' => $this->input->ip_address());
 						redirect('Peserta');
 						exit;
 					} elseif($role == 'admin') {

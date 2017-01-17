@@ -33,9 +33,9 @@ class Peserta extends CI_Controller{
 		$no_hp 		= $this->input->post('no_hp');
 		$dinas1 	= $this->input->post('dinas1');
 		$dinas2		= $this->input->post('dinas2');
-		$alasan1 	= $this->input->post('alasan1');
-		$alasan2 	= $this->input->post('alasan2');
-		$alasan_bem = $this->input->post('alasan_bem');
+		$alasan1 	= trim(htmlentities($this->input->post('alasan1')));
+		$alasan2 	= trim(htmlentities($this->input->post('alasan2')));
+		$alasan_bem = trim(htmlentities($this->input->post('alasan_bem')));
 		$id_line 	= $this->input->post('id_line');
 
 
@@ -45,6 +45,7 @@ class Peserta extends CI_Controller{
 			exit;
 		}
 
+		date_default_timezone_set("Asia/Jakarta");
 		if($this->input->post('simpan')){
 			if(isset($nama, $jurusan, $angkatan, $ipk, $alamat, $tempat, $ttl, $no_hp, $dinas1, $dinas2, $alasan1, $alasan2, $alasan_bem, $id_line)){
 					$input = array(
@@ -62,6 +63,8 @@ class Peserta extends CI_Controller{
 					'alasan2'	=> $alasan2,
 					'id_line'	=> $id_line,
 					'alasan_bem'=> $alasan_bem,
+					'waktu'		=> date("d-m-Y"),
+					'ip'		=> $this->input->ip_address()
 				);
 
 				$this->Peserta_model->update($nim, $input);
