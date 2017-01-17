@@ -39,6 +39,7 @@ class Login extends CI_Controller{
 							'ip'		=> echo $this->input->ip_address() 
 						);
 						$this->Peserta_model->update($nim, $data);
+						echo 'mhs';
 						exit;
 						redirect('Peserta');
 						exit;
@@ -46,15 +47,21 @@ class Login extends CI_Controller{
 						$this->session->set_userdata('nim', $nim);
 						$this->session->set_userdata('role', $role);
 						redirect('Admin');
+						echo 'admin';
+						exit;
 						exit;
 					} elseif($role == 'super admin'){
 						$this->session->set_userdata('nim', $nim);
 						$this->session->set_userdata('role', $role);
+						echo 'super';
+						exit;
 						redirect('super_admin');
 						exit;
 					} elseif($role == 's_admin'){
 						$this->session->set_userdata('nim', $nim);
 						$this->session->set_userdata('role', $role);
+						echo 's_adm';
+						exit;
 						redirect('super_admin');
 						exit;
 					}
