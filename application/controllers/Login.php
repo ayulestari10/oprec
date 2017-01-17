@@ -46,9 +46,9 @@ class Login extends CI_Controller{
 					} elseif($role == 'admin') {
 						$this->session->set_userdata('nim', $nim);
 						$this->session->set_userdata('role', $role);
-						redirect('Admin');
 						echo 'admin';
 						exit;
+						redirect('Admin');
 						exit;
 					} elseif($role == 'super admin'){
 						$this->session->set_userdata('nim', $nim);
