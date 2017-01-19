@@ -524,7 +524,7 @@
         </div>
     </section>
 
-    <section id="daftar" class="container content-section text-center"  >
+   <!--  <section id="daftar" class="container content-section text-center"  >
         <div class="container">
             <div class="row centered-form">
             <div class="col-md-8 col-md-offset-2" style="height: 800px; margin-top: -10%;" >
@@ -534,16 +534,16 @@
                     </div>
                      <div>
                         <?php 
-                            $msg = $this->session->flashdata('msg');
+                            $msg = $this->session->flashdata();
 
-                            if(isset($msg)){
-                                echo $msg;
+                            //if(isset($msg)){
+                              //  echo $msg;
                             }
                         ?>
                     </div>
             
                         <div class="panel-body">
-                            <form role="form" action="<?= base_url('regist/proses') ?>" method="POST">
+                            <form role="form" action="<?= base_url() ?>" method="POST">
                                 <div class="row">
                                     <div class="col-xs-6 col-sm-6 col-md-12">
                                         <div class="form-group">
@@ -569,17 +569,17 @@
                             
                             </form> 
                         </div>
-                        <!-- <div class="coun">
+                        <div class="coun">
                             <div id="cd" class="cd" data-date="2017-01-10 24:00:00"></div>
                             <script type="text/javascript">
                                 $(".cd").TimeCircles();
                             </script>
-                        </div> -->
+                        </div> 
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
 
     <style type="text/css">
