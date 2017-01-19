@@ -524,62 +524,6 @@
         </div>
     </section>
 
-   <!--  <section id="daftar" class="container content-section text-center"  >
-        <div class="container">
-            <div class="row centered-form">
-            <div class="col-md-8 col-md-offset-2" style="height: 800px; margin-top: -10%;" >
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Daftar OPREC BEM KM FASILKOM 2017</h3>
-                    </div>
-                     <div>
-                        <?php 
-                            $msg = $this->session->flashdata();
-
-                            //if(isset($msg)){
-                              //  echo $msg;
-                            }
-                        ?>
-                    </div>
-            
-                        <div class="panel-body">
-                            <form role="form" action="<?= base_url() ?>" method="POST">
-                                <div class="row">
-                                    <div class="col-xs-6 col-sm-6 col-md-12">
-                                        <div class="form-group">
-                                            <input type="text" name="nim" id="nim" class="form-control input-sm" placeholder="Nomor Induk Siswa / NIM" onkeyup="validAngka(this)">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="password" name="password1" id="password" class="form-control input-sm" placeholder="Password">
-                                        </div>
-                                    </div>
-                                    <div class="col-xs-6 col-sm-6 col-md-6">
-                                        <div class="form-group">
-                                            <input type="password" name="password2" id="password_confirmation" class="form-control input-sm" placeholder="Confirm Password">
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <input type="submit" value="Daftar" name="regist" class="btn btn-primary btn-block">
-                            
-                            </form> 
-                        </div>
-                        <div class="coun">
-                            <div id="cd" class="cd" data-date="2017-01-10 24:00:00"></div>
-                            <script type="text/javascript">
-                                $(".cd").TimeCircles();
-                            </script>
-                        </div> 
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
 
 
     <style type="text/css">
