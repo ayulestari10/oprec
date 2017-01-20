@@ -35,8 +35,8 @@ class Login extends CI_Controller{
 						date_default_timezone_set("Asia/Jakarta");
 
 						$data = array(
-							'waktu'		=> echo date("d-m-Y"),
-							'ip'		=> echo $this->input->ip_address() 
+							'waktu'		=> date("d-m-Y"),
+							'ip'		=> $this->input->ip_address() 
 						);
 						$this->Peserta_model->update($nim, $data);
 						redirect('Peserta');
