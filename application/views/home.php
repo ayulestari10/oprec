@@ -196,7 +196,7 @@
             </div> -->
             <div class="row" id="coming">
                 <div class="col-md-8 col-sm-8 col-lg-offset-2">
-                    <img src="<?= base_url('assets/img/pamflet.jpg') ?>">
+                    <img src="<?= base_url('assets/img/oprec.png') ?>">
                 </div>
             </div>
             <!-- <div class="container" style="margin-top: -10%;">
