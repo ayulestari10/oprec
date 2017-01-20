@@ -73,24 +73,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $query_builder = TRUE;
 
-// $db['default'] = array(
-// 	'dsn'	=> '',
-// 	'hostname' => 'br-cdbr-azure-south-b.cloudapp.net',
-// 	'username' => 'b5f1a1356de2f1',
-// 	'password' => '6f03c1fa',
-// 	'database' => 'karya_ilkom',
-// 	'dbdriver' => 'mysqli',
-// 	'dbprefix' => '',
-// 	'pconnect' => FALSE,
-// 	'db_debug' => (ENVIRONMENT !== 'production'),
-// 	'cache_on' => FALSE,
-// 	'cachedir' => '',
-// 	'char_set' => 'utf8',
-// 	'dbcollat' => 'utf8_general_ci',
-// 	'swap_pre' => '',
-// 	'encrypt' => FALSE,
-// 	'compress' => FALSE,
-// 	'stricton' => FALSE,
-// 	'failover' => array(),
-// 	'save_queries' => TRUE
-// );
+$db['default'] = array(
+	'dsn'	=> '',
+	'hostname' => 'br-cdbr-azure-south-b.cloudapp.net',
+	'username' => 'b5f1a1356de2f1',
+	'password' => '6f03c1fa',
+	'database' => 'karya_ilkom',
+	'dbdriver' => 'mysqli',
+	'dbprefix' => '',
+	'pconnect' => FALSE,
+	'db_debug' => (ENVIRONMENT !== 'production'),
+	'cache_on' => FALSE,
+	'cachedir' => '',
+	'char_set' => 'utf8',
+	'dbcollat' => 'utf8_general_ci',
+	'swap_pre' => '',
+	'encrypt' => FALSE,
+	'compress' => FALSE,
+	'stricton' => FALSE,
+	'failover' => array(),
+	'save_queries' => TRUE
+);
