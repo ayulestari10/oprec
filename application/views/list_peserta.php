@@ -40,6 +40,11 @@
 								<a href="<?= base_url('admin/detail_peserta/'.$row->id_data) ?>" class="btn btn-info"><i class="fa fa-info"> Detail</i></a>
 							<?php elseif($role == 'super admin'): ?>
 								<a href="<?= base_url('super_admin/detail_peserta/'.$row->id_data) ?>" class="btn btn-info"><i class="fa fa-info"> Detail</i></a>
+							<?php if ($row->status == 'lulus'): ?>
+								<button onclick="changeStatus(<?= $row->id_data ?>, this)" class="btn btn-success"><i class="fa fa-check"></i> Lulus</button>
+							<?php else: ?>
+								<button onclick="changeStatus(<?= $row->id_data ?>, this)" class="btn btn-danger"><i class="fa fa-close"></i> Tidak Lulus</button>
+							<?php endif; ?>
 							<?php elseif($role == 's_admin'): ?>
 								<a href="<?= base_url('super_admin/detail_peserta/'.$row->id_data) ?>" class="btn btn-info"><i class="fa fa-info"> Detail</i></a>
 							<?php endif; ?>
@@ -52,3 +57,31 @@
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+	function changeStatus(id_data, btn) {
+		$.ajax({
+			url: '<?= base_url('super_admin/hasil') ?>',
+			type: 'POST',
+			data: {
+				id_data: id_data
+			},
+			success: function(response) {
+				if (response == 'lulus') {
+					$(btn).removeClass('btn-danger');
+					$(btn).addClass('btn-success');
+					$(btn + " i").removeClass('fa-close');
+					$(btn + " i").addClass('fa-check');
+				} else if (response == 'tidak lulus') {
+					$(btn).removeClass('btn-success');
+					$(btn).addClass('btn-danger');
+					$(btn + " i").removeClass('fa-check');
+					$(btn + " i").addClass('fa-close');
+				}
+			},
+			error: function (e) {
+				console.log(e.responseText);
+			}
+		});
+	}
+</script>

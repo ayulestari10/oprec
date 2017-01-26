@@ -37,6 +37,13 @@ class Admin extends CI_Controller{
 		);
 		$this->load->view('frames/templates', $data);
 	}
+
+	function hasil(){
+		if($this->input->post('save')){
+
+		}
+
+	}
 }
 
 ?>

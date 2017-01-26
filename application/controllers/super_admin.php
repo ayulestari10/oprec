@@ -49,6 +49,29 @@ class Super_admin extends CI_Controller{
 			exit;
 		}
 	}
+
+	public function hasil()
+	{
+		if ($this->input->post('id_data'))
+		{
+			$id_data = $this->input->post('id_data');
+			$this->load->model('peserta_model');
+			$peserta = $this->peserta_model->get_dataBy_Id($id_data);
+			if (isset($peserta))
+			{
+				if ($peserta->status == 'lulus')
+				{
+					$this->peserta_model->update($id_data, ['status' => 'tidak lulus']);
+					echo 'tidak lulus';
+				}
+				else
+				{
+					$this->peserta_model->update($id_data, ['status' => 'lulus']);
+					echo 'lulus';	
+				}
+			}
+		}
+	} 
 }
 
 ?>
