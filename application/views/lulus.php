@@ -56,6 +56,8 @@
 					<strong><?= $row->dinas1 ?></strong>
 				<?php elseif($row->status2 == 'lulus'): ?>
 					<strong><?= $row->dinas2 ?></strong>
+				<?php elseif (strlen($row->status3) > 1): ?>
+					<strong><?= $row->status3 ?></strong>
 				<?php endif; ?>
 			 </div>
 			<div style="text-align: center;">

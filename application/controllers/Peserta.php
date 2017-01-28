@@ -107,7 +107,7 @@ class Peserta extends CI_Controller{
 		$query 	= $this->Peserta_model->get_dataBy_nim($this->session->userdata('nim'));
 		//$status	= $this->Peserta_model->get_status($this->session->userdata('nim'));
 
-		if($query->status1 == 'lulus' || $query->status2 == 'lulus'){
+		if($query->status1 == 'lulus' || $query->status2 == 'lulus' || strlen($query->status3) > 1){
 			$data = array(
 				'title'		=> 'Hasil ',
 				'content'	=> 'lulus',
