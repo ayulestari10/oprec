@@ -45,21 +45,55 @@
 
 	<div class="row" id="hasil">
 		<div class="col-md-6" style="background-color: #09B301;">
-			 <div id="barcode">
-			 	<img src="<?= base_url('assets/img/qr/kastrad.jpg') ?>">
-			 </div>
-			 <div style="text-align: center;">
-			 	<strong>Selamat anda dinyatakan lulus.</strong>
-			 </div>
-			 <div id="title">
 			 	<?php if($row->status1 == 'lulus'): ?>
-					<strong><?= $row->dinas1 ?></strong>
+			 		<div id="barcode">
+			 			<?php if ($row->dinas1 == 'Divisi Politik Kajian Strategi' || $row->dinas1 == 'Divisi Advokasi Kampus'): ?>
+			 				<img src="<?= base_url('assets/img/qr/Dinas Kastrad.jpg') ?>">
+			 			<?php elseif ($row->dinas1 == 'Divisi Multimedia' || $row->dinas1 == 'Divisi Hubungan Masyarakat'): ?>
+			 				<img src="<?= base_url('assets/img/qr/Dinas Media dan Informasi.jpg') ?>">
+			 			<?php else: ?>
+			 				<img src="<?= base_url('assets/img/qr/'.$row->dinas1.'.jpg') ?>">
+			 			<?php endif; ?>
+					 </div>
+					 <div style="text-align: center;">
+					 	<strong>Selamat anda dinyatakan lulus.</strong>
+					 </div>
+					 <div id="title">
+						<strong><?= $row->dinas1 ?></strong>
+					</div>
 				<?php elseif($row->status2 == 'lulus'): ?>
-					<strong><?= $row->dinas2 ?></strong>
+					<div id="barcode">
+					 	<?php if ($row->dinas2 == 'Divisi Politik Kajian Strategi' || $row->dinas1 == 'Divisi Advokasi Kampus'): ?>
+			 				<img src="<?= base_url('assets/img/qr/Dinas Kastrad.jpg') ?>">
+			 			<?php elseif ($row->dinas2 == 'Divisi Multimedia' || $row->dinas2 == 'Divisi Hubungan Masyarakat'): ?>
+			 				<img src="<?= base_url('assets/img/qr/Dinas Media dan Informasi.jpg') ?>">
+			 			<?php else: ?>
+			 				<img src="<?= base_url('assets/img/qr/'.$row->dinas2.'.jpg') ?>">
+			 			<?php endif; ?>
+					 </div>
+					 <div style="text-align: center;">
+					 	<strong>Selamat anda dinyatakan lulus.</strong>
+					 </div>
+					 <div id="title">
+						<strong><?= $row->dinas2 ?></strong>
+					</div>
 				<?php elseif (strlen($row->status3) > 1): ?>
-					<strong><?= $row->status3 ?></strong>
+					<div id="barcode">
+					 	<?php if ($row->status3 == 'Divisi Politik Kajian Strategi' || $row->status3 == 'Divisi Advokasi Kampus'): ?>
+			 				<img src="<?= base_url('assets/img/qr/Dinas Kastrad.jpg') ?>">
+			 			<?php elseif ($row->status3 == 'Divisi Multimedia' || $row->status3 == 'Divisi Hubungan Masyarakat'): ?>
+			 				<img src="<?= base_url('assets/img/qr/Dinas Media dan Informasi.jpg') ?>">
+			 			<?php else: ?>
+			 				<img src="<?= base_url('assets/img/qr/'.$row->status3.'.jpg') ?>">
+			 			<?php endif; ?>
+					 </div>
+					 <div style="text-align: center;">
+					 	<strong>Selamat anda dinyatakan lulus.</strong>
+					 </div>
+					 <div id="title">
+						<strong><?= $row->status3 ?></strong>
+					</div>
 				<?php endif; ?>
-			 </div>
 			<div style="text-align: center;">
 				<strong>Selanjutnya anda harus bergabung dalam grup dengan cara menambahkan QR Code Grup diatas!</strong>
 			</div>
