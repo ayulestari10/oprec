@@ -55,12 +55,27 @@ class Peserta_model extends CI_Model{
 		return $nim;
 	}
 
+	function get_status($nim){
+		$this->db->where('nim', $nim);
+		$query = $this->db->get($this->table);
+		foreach($query->result() as $row){
+			$status = $row->status;
+		}
+		return $status;
+	}
+
 	function insert($data){
 		return $this->db->insert($this->table, $data);
 	}
 
 	function update($nim, $data){
 		$this->db->where('nim', $nim);
+		return $this->db->update($this->table, $data);
+	}
+
+	public function updt($pk, $data)
+	{
+		$this->db->where(['id_data' => $pk]);
 		return $this->db->update($this->table, $data);
 	}
 

@@ -102,6 +102,28 @@ class Peserta extends CI_Controller{
     	$this->m_pdf->pdf->WriteHTML($html);
     	$this->m_pdf->pdf->Output($pdfFilePath, "D");	
 	}
+
+	function pengumuman(){
+		$query 	= $this->Peserta_model->get_dataBy_nim($this->session->userdata('nim'));
+		//$status	= $this->Peserta_model->get_status($this->session->userdata('nim'));
+
+		if($query->status1 == 'lulus' || $query->status2 == 'lulus'){
+			$data = array(
+				'title'		=> 'Hasil ',
+				'content'	=> 'lulus',
+				'row'		=> $query
+			);
+			$this->load->view('frames/templates', $data);
+		} 
+		else{
+			$data = array(
+				'title'		=> 'Hasil ',
+				'content'	=> 'tidak_lulus',
+				'row'		=> $query
+			);
+			$this->load->view('frames/templates', $data);
+		}
+	}
 }
 
 ?>

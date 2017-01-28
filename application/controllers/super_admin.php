@@ -57,19 +57,53 @@ class Super_admin extends CI_Controller{
 			$id_data = $this->input->post('id_data');
 			$this->load->model('peserta_model');
 			$peserta = $this->peserta_model->get_dataBy_Id($id_data);
+			// foreach ($peserta->result() as $key) {
+			// 	$status = $key->status;
+			// }
+			// echo $status. 'hey';
+			// exit;
 			if (isset($peserta))
 			{
-				if ($peserta->status == 'lulus')
+				if ($peserta->status1 == 'lulus')
 				{
-					$this->peserta_model->update($id_data, ['status' => 'tidak lulus']);
-					echo 'tidak lulus';
+					$this->peserta_model->updt($id_data, ['status1' => 'tidak lulus']);
+					echo '<button class="btn btn-danger" onclick="changeStatus('.$id_data.')"><i class="fa fa-close"></i> Dinas 1</button>';
 				}
 				else
 				{
-					$this->peserta_model->update($id_data, ['status' => 'lulus']);
-					echo 'lulus';	
+					$this->peserta_model->updt($id_data, ['status1' => 'lulus']);
+					echo '<button class="btn btn-success" onclick="changeStatus('.$id_data.')"><i class="fa fa-check"></i> Dinas 1</button>';	
 				}
-			}
+			 } //else {
+			// 	echo "gagal";
+			// }
+		}
+
+		if ($this->input->post('id_data2'))
+		{
+			$id_data = $this->input->post('id_data2');
+			$this->load->model('peserta_model');
+			$peserta = $this->peserta_model->get_dataBy_Id($id_data);
+			// foreach ($peserta->result() as $key) {
+			// 	$status = $key->status;
+			// }
+			// echo $status. 'hey';
+			// exit;
+			if (isset($peserta))
+			{
+				if ($peserta->status2 == 'lulus')
+				{
+					$this->peserta_model->updt($id_data, ['status2' => 'tidak lulus']);
+					echo '<button class="btn btn-danger" onclick="changeStatus2('.$id_data.')"><i class="fa fa-close"></i> Dinas 2</button>';
+				}
+				else
+				{
+					$this->peserta_model->updt($id_data, ['status2' => 'lulus']);
+					echo '<button class="btn btn-success" onclick="changeStatus2('.$id_data.')"><i class="fa fa-check"></i> Dinas 2</button>';	
+				}
+			 } //else {
+			// 	echo "gagal";
+			// }
 		}
 	} 
 }
