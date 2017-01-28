@@ -105,6 +105,17 @@ class Super_admin extends CI_Controller{
 			// 	echo "gagal";
 			// }
 		}
+
+		if ($this->input->post('id_data3'))
+		{
+			$id_data = $this->input->post('id_data3');
+			$this->load->model('peserta_model');
+			$peserta = $this->peserta_model->get_dataBy_Id($id_data);
+			if (isset($peserta))
+			{
+				$this->peserta_model->updt($id_data, ['status3' => $this->input->post('dinas')]);
+			}
+		}
 	} 
 }
 

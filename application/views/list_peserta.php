@@ -8,6 +8,22 @@
 					if(isset($msg)){
 						echo $msg;
 					}
+
+					$list_dinas = [
+						'Dinas Kesekretariatan',
+						'Dinas Pengembangan Sumber Daya Manusia',
+						'Dinas PTI',
+						'Dinas Sosial dan Masyarakat',
+						'Dinas Seni dan Olahraga',
+						'Dinas Kastrad',
+						'Divisi Politik Kajian Strategi',
+						'Divisi Advokasi Kampus',
+						'Dinas Media dan Informasi',
+						'Divisi Hubungan Masyarakat',
+						'Divisi Multimedia',
+						'Dinas Kewirausahaan',
+						'Dinas Akademik'
+					];
 				?>
 			</div>
 			<table class="table table-striped">
@@ -56,6 +72,13 @@
 								<?php endif; ?>
 							</div>
 
+							<?php  
+								$dinas = ['' => ''];
+								foreach ($list_dinas as $d)
+									$dinas[$d] = $d;
+								echo form_dropdown('status3-' . $row->id_data, $list_dinas, $row->status3, ['id' => 'status-' . $row->id_data, 'class' => 'form-control', 'onchange' => 'changeStatus3("'.$row->id_data.'")']);
+							?>
+
 							<?php elseif($role == 's_admin'): ?>
 								<a href="<?= base_url('super_admin/detail_peserta/'.$row->id_data) ?>" class="btn btn-info"><i class="fa fa-info"> Detail</i></a>
 							<?php endif; ?>
@@ -95,6 +118,23 @@
 			},
 			success: function(response) {
 				$('#btn2-' + id_data).html(response);
+			},
+			error: function (e) {
+				console.log(e.responseText);
+			}
+		});
+	}	
+
+	function changeStatus3(id_data) {
+		$.ajax({
+			url: '<?= base_url('super_admin/hasil') ?>',
+			type: 'POST',
+			data: {
+				id_data3: id_data,
+				dinas: $('#status-' + id_data).val()
+			},
+			success: function(response) {
+				console.log('Selamat anda lulus huahuahauhauauahaha');
 			},
 			error: function (e) {
 				console.log(e.responseText);
