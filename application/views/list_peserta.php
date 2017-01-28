@@ -75,7 +75,12 @@
 							<?php  
 								$dinas = ['' => ''];
 								foreach ($list_dinas as $d)
-									$dinas[$d] = $d;
+								{
+									if ($d == 'Dinas Pengembangan Sumber Daya Manusia')
+										$dinas['Dinas PSDM'] = $d;
+									else
+										$dinas[$d] = $d;
+								}
 								echo form_dropdown('status3-' . $row->id_data, $dinas, $row->status3, ['id' => 'status-' . $row->id_data, 'class' => 'form-control', 'onchange' => 'changeStatus3('.$row->id_data.')']);
 							?>
 
