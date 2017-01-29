@@ -39,7 +39,7 @@ class Login extends CI_Controller{
 							'ip'		=> $this->input->ip_address() 
 						);
 						$this->Peserta_model->update($nim, $data);
-						redirect('Peserta/pengumuman');
+						redirect('login');
 						exit;
 					} elseif($role == 'admin') {
 						$this->session->set_userdata('nim', $nim);
